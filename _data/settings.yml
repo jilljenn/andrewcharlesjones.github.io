@@ -4,7 +4,7 @@ disqus:
   disqus_shortname: ''
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-ID: ''
+google-ID: 'UA-149140730-1'
 
 menu:
 - {name: 'Blog', path: 'menu', url: 'blog.html'}
@@ -13,7 +13,9 @@ menu:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'github', link: 'https://github.com/andrewcharlesjones'}
+- {icon: 'graduation-cap', link: 'https://scholar.google.com/citations?user=cdPiMskAAAAJ&hl=en'}
 - {icon: 'twitter', link: 'https://twitter.com/andy_c_jones'}
+
 # - {icon: 'linkedin', link: ''}
 - {icon: 'envelope', link: 'aj13@princeton.edu'}
 # - {icon: 'rss-square', link: '/feed.xml'}
