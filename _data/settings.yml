@@ -8,7 +8,7 @@ google-ID: ''
 
 menu:
 - {name: 'Blog', path: 'menu', url: 'writing.html'}
-- {name: 'CV', path: 'menu', url: 'contact.html'}
+- {name: 'CV', path: 'menu', url: '../files/Andrew_Jones_CV.pdf'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
