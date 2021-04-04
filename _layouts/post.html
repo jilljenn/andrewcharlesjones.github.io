@@ -12,7 +12,7 @@ layout: default
 
 {{ content }}
 
-<span class="post-date">
+<!-- <span class="post-date">
   {{ site.data.settings.post_date_prefix }}
   {% assign d = page.date | date: "%-d"  %}
   {{ page.date | date: "%B" }}
@@ -28,11 +28,11 @@ layout: default
   {% else %}
     {{ site.author }}
   {% endif %}
-</span>
+</span> -->
 
-{% include social-sharing.html %}
+<!-- {% include social-sharing.html %} -->
 
-{% include related-posts.html %}
+<!-- {% include related-posts.html %} -->
 
 {% if site.data.settings.disqus.comments %}
   {% include disqus.html %}
