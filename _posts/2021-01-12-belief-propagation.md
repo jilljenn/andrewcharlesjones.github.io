@@ -1,11 +1,10 @@
 ---
+layout: post
 title: "Belief propagation"
-date: 2021-01-12
-permalink: /posts/2021/01/belief-propagation/
-tags:
-  - statistics
-  - machine learning
-  - physics
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Belief propagation is a family of message passing algorithms, often used for computing marginal distributions and maximum a posteriori (MAP) estimates of random variables that have a graph structure.

@@ -1,9 +1,10 @@
 ---
-title: 'COVID-19 Zoomposium notes'
-date: 2020-04-04
-permalink: /posts/2020/03/covidzoomposium/
-tags:
-  - epidemiology
+layout: post
+title: "COVID-19 Zoomposium notes"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

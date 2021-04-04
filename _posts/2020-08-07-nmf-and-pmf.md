@@ -1,12 +1,11 @@
 ---
-title: 'Connection between non-negative matrix factorization and Poisson matrix factorization'
-date: 2020-08-07
-permalink: /posts/2020/08/nmf-and-pmf/
-tags:
-  - statistics
-  - machine learning
+layout: post
+title: "Connection between non-negative matrix factorization and Poisson matrix factorization"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
-
 
 
 In this post, we draw a simple connection between the optimization problems for NMF and PMF.

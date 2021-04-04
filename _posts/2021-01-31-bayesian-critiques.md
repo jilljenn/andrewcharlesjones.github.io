@@ -1,10 +1,10 @@
 ---
+layout: post
 title: "Critiques of Bayesian statistics"
-date: 2021-01-31
-permalink: /posts/2021/01/bayesian-critiques/
-tags:
-  - bayesian statistics
-  - statistical philosophy
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

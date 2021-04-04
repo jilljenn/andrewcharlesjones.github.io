@@ -1,10 +1,10 @@
 ---
+layout: post
 title: "James-Stein estimator"
-date: 2020-09-05
-permalink: /posts/2020/09/james-stein/
-tags:
-  - statistics
-  - decision theory
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 The James-Stein estimator dominates the MLE by sharing information across seemingly unrelated variables.

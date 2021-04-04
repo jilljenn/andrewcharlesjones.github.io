@@ -1,12 +1,10 @@
 ---
+layout: post
 title: "Inducing points for Gaussian Processes"
-date: 2021-03-27
-permalink: /posts/2021/03/inducing-points/
-tags:
-  - statistics
-  - Bayesian inference
-  - machine learning
-  - Gaussian processes
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Inducing points provide a strategy for lowering the computational cost of Gaussian process prediction by closely modeling only a subset of the input space.

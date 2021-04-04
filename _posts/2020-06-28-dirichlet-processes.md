@@ -1,11 +1,9 @@
----
-title: 'Dirichlet Processes: the basics'
-date: 2020-06-21
-permalink: /posts/2020/06/dirichlet-processes/
-tags:
-  - statistics
-  - machine learning
-  - probability
+layout: post
+title: "Dirichlet Processes: the basics"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

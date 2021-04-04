@@ -1,9 +1,10 @@
 ---
+layout: post
 title: "Cubic splines"
-date: 2020-12-26
-permalink: /posts/2020/12/cubic-splines/
-tags:
-  - statistics
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Cubic splines are flexible nonparametric models. Here, we discuss some of the spline fundamentals.

@@ -1,11 +1,10 @@
 ---
-title: 'Wiener and Ito processes'
-date: 2020-10-12
-permalink: /posts/2020/10/wiener-ito-processes/
-tags:
-  - statistics
-  - probability
-  - stochastic calculus
+layout: post
+title: "Wiener and Ito processes"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 A brief review three types of stochastic processes: Wiener processes, generalized Wiener processes, and Ito processes.

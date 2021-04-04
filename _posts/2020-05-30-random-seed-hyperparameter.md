@@ -1,12 +1,11 @@
 ---
-title: 'Are random seeds hyperparameters?'
-date: 2020-05-30
-permalink: /posts/2020/05/random-seed-hyperparameter/
-tags:
-  - machine learning
-  - programming
+layout: post
+title: "Are random seeds hyperparameters?"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
-
 
 
 

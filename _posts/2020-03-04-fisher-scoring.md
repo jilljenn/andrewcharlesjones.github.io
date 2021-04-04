@@ -1,9 +1,10 @@
 ---
+layout: post
 title: "Newton's method and Fisher scoring for fitting GLMs"
-date: 2020-03-04
-permalink: /posts/2020/03/fisherscoring/
-tags:
-  - statistics
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Generalized linear models are flexible tools for modeling various response disributions. This post covers one common way of fitting them.

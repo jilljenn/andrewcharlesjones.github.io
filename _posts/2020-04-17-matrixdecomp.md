@@ -1,9 +1,10 @@
 ---
-title: 'Common matrix decompositions'
-date: 2020-04-17
-permalink: /posts/2020/04/matrixdecomp/
-tags:
-  - linear algebra
+layout: post
+title: "Common matrix decompositions"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

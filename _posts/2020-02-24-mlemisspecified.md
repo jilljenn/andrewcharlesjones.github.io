@@ -1,9 +1,10 @@
 ---
-title: 'MLE under a misspecified model'
-date: 2020-02-25
-permalink: /posts/2020/02/mle-misspecified/
-tags:
-  - statistics
+layout: post
+title: "MLE under a misspecified model"
+author: "Andy Jones"
+categories: journal
+tags: [statistics]
+<!-- image: -->
 ---
 
 

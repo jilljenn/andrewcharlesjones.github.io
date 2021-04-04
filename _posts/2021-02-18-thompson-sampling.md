@@ -1,11 +1,10 @@
 ---
+layout: post
 title: "Thompson sampling"
-date: 2021-02-18
-permalink: /posts/2021/02/thompson-sampling/
-tags:
-  - statistics
-  - reinforcement learning
-  - bandits
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Thompson sampling is a simple Bayesian approach to selecting actions in a multi-armed bandit setting.

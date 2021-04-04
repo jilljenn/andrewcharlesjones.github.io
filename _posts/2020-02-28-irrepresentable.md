@@ -1,9 +1,10 @@
 ---
-title: 'LASSO and the irrepresentable condition'
-date: 2020-02-28
-permalink: /posts/2020/02/irrepresentable/
-tags:
-  - statistics
+layout: post
+title: "LASSO and the irrepresentable condition"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

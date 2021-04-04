@@ -1,9 +1,10 @@
 ---
+layout: post
 title: "Ito's lemma"
-date: 2020-10-12
-permalink: /posts/2020/10/itos-lemma/
-tags:
-  - stochastic calculus
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 A sketch of the derivation for Ito's Lemma and a simple example.

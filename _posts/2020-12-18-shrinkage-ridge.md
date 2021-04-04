@@ -1,9 +1,10 @@
 ---
+layout: post
 title: "Shrinkage in ridge regression"
-date: 2020-12-18
-permalink: /posts/2020/12/ridge-shrinkage/
-tags:
-  - statistics
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 A brief review of shrinkage in ridge regression and a comparison to OLS.

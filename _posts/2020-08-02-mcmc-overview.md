@@ -1,11 +1,10 @@
 ---
-title: 'Whirlwind tour of MCMC for posterior inference'
-date: 2020-08-02
-permalink: /posts/2020/08/mcmc-overview/
-tags:
-  - statistics
-  - machine learning
-  - stochastic processes
+layout: post
+title: "Whirlwind tour of MCMC for posterior inference"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

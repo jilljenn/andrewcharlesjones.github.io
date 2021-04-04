@@ -1,9 +1,10 @@
 ---
-title: 'Gumbel max trick'
-date: 2020-02-21
-permalink: /posts/2020/02/gumbelmax/
-tags:
-  - statistics
+layout: post
+title: "Gumbel max trick"
+author: "Andy Jones"
+categories: journal
+tags: [statistics]
+<!-- image: -->
 ---
 
 

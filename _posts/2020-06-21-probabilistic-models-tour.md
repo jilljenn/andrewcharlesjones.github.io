@@ -1,11 +1,10 @@
 ---
-title: 'Estimation and Inference in probabilistic models: A whirlwind tour'
-date: 2020-06-21
-permalink: /posts/2020/06/probabilistic-models-tour/
-tags:
-  - statistics
-  - machine learning
-  - probability
+layout: post
+title: "Estimation and Inference in probabilistic models: A whirlwind tour"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

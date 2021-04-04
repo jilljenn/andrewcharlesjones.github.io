@@ -1,9 +1,10 @@
 ---
-title: 'Universal Portfolios: A simple online learning algorithm'
-date: 2020-01-25
-permalink: /posts/2020/01/universalportfolios/
-tags:
-  - algorithms
+layout: post
+title: "Universal Portfolios: A simple online learning algorithm"
+author: "Andy Jones"
+categories: journal
+tags: [algorithms]
+<!-- image: -->
 ---
 
 

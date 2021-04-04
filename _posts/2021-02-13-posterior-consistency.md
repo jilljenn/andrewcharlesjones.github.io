@@ -1,10 +1,10 @@
 ---
+layout: post
 title: "Posterior consistency"
-date: 2021-02-13
-permalink: /posts/2021/02/posterior-consistency/
-tags:
-  - statistics
-  - probability
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Bayesian models provide a principled way to make inferences about underlying parameters. But under what conditions do those inferences converge to the truth?

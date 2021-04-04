@@ -1,10 +1,10 @@
 ---
-title: 'The representer theorem and kernel ridge regression'
-date: 2020-03-07
-permalink: /posts/2020/03/representerthm/
-tags:
-  - statistics
-  - machine learning
+layout: post
+title: "The representer theorem and kernel ridge regression"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

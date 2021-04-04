@@ -1,9 +1,9 @@
----
-title: 'Generalized PCA'
-date: 2020-03-14
-permalink: /posts/2020/03/generalizedpca/
-tags:
-  - statistics
+layout: post
+title: "Generalized PCA"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

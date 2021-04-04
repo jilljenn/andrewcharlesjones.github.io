@@ -1,9 +1,10 @@
 ---
-title: 'Quasi-likelihoods'
-date: 2020-04-02
-permalink: /posts/2020/03/quasilikelihoods/
-tags:
-  - statistics
+layout: post
+title: "Quasi-likelihoods"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

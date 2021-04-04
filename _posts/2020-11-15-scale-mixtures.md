@@ -1,11 +1,11 @@
 ---
+layout: post
 title: "Scale mixtures of normals"
-date: 2020-11-15
-permalink: /posts/2020/11/scale-mixtures/
-tags:
-  - statistics
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
-
 
 Here, we discuss two distributions which arise as scale mixtures of normals: the Laplace and the Student-$t$.
 

@@ -1,12 +1,11 @@
 ---
-title: 'Log-derivative trick'
-date: 2020-02-26
-permalink: /posts/2020/02/log-derivative/
-tags:
-  - statistics
-  - machine learning
+layout: post
+title: "Log-derivative trick"
+author: "Andy Jones"
+categories: journal
+tags: [statistics,machine learning]
+<!-- image: -->
 ---
-
 
 
 The "log-derivative trick" is really just a simple application of the chain rule. However, it allows us to rewrite expectations in a way that is amenable to Monte Carlo approximation.

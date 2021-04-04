@@ -1,9 +1,10 @@
 ---
+layout: post
 title: "Power iteration method"
-date: 2021-01-24
-permalink: /posts/2021/01/power-iteration/
-tags:
-  - linear algebra
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 The power iteration algorithm is a numerical approach to computing the top eigenvector and eigenvalue of a matrix.

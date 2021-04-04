@@ -1,10 +1,10 @@
 ---
-title: 'Improper priors'
-date: 2020-07-18
-permalink: /posts/2020/07/improper-priors/
-tags:
-  - statistics
-  - Bayesian statistics
+layout: post
+title: "Improper priors"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

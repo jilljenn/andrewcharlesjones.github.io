@@ -1,12 +1,11 @@
 ---
-title: 'Schur complements'
-date: 2020-08-19
-permalink: /posts/2020/08/schur/
-tags:
-  - linear algebra
-  - statistics
+layout: post
+title: "Schur complements"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
-
 
 Schur complements are quantities that arise often in linear algebra in the context of block matrix inversion. Here, we review the basics and show an application in statistics.
 

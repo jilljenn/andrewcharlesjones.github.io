@@ -1,10 +1,10 @@
 ---
+layout: post
 title: "Chi triangles"
-date: 2021-02-05
-permalink: /posts/2021/02/chi-triangles/
-tags:
-  - statistics
-  - geometry
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Describing $\chi$ random variables as the lengths of vectors.

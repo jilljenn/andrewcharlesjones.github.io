@@ -1,10 +1,10 @@
 ---
-title: 'Reduced-rank regresssion'
-date: 2020-06-07
-permalink: /posts/2020/06/rrr/
-tags:
-  - statistics
-  - linear algebra
+layout: post
+title: "Reduced-rank regresssion"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

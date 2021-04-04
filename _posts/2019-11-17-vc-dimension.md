@@ -1,10 +1,10 @@
 ---
-title: 'Introduction to VC dimension'
-date: 2019-11-17
-permalink: /posts/2019/11/vc_dimension/
-tags:
-  - machine learning
-  - learning theory
+layout: post
+title: "Introduction to VC dimension"
+author: "Andy Jones"
+categories: journal
+tags: [machine learning,learning theory]
+<!-- image: -->
 ---
 
 VC dimension is a measure of the complexity of a statistical model. In essence, a model with a higher VC dimension is able to learn more complex mappings between data and labels. In this post, we'll firm up this definition and walk through a couple simple examples.

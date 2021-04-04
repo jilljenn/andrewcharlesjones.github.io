@@ -1,10 +1,10 @@
 ---
-title: 'Duality between maximum likelihood and maximum entropy'
-date: 2020-07-25
-permalink: /posts/2020/07/mle-maxent-duality/
-tags:
-  - statistics
-  - information theory
+layout: post
+title: "Duality between maximum likelihood and maximum entropy"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 There exists a duality between maximum likelihood estimation and finding the maximum entropy distribution subject to a set of linear constraints.

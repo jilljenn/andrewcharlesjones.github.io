@@ -1,10 +1,10 @@
 ---
-title: 'Generalized PCA: an alternative approach'
-date: 2020-06-13
-permalink: /posts/2020/06/generalized-pca-2/
-tags:
-  - statistics
-  - machine learning
+layout: post
+title: "Generalized PCA: an alternative approach"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

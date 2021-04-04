@@ -1,10 +1,10 @@
 ---
+layout: post
 title: "Binomial model for options pricing"
-date: 2020-12-06
-permalink: /posts/2020/12/binomial-options/
-tags:
-  - numerical methods
-  - mathematical finance
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 The binomial model is a simple method for determining the prices of options.

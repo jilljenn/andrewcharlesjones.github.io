@@ -1,10 +1,10 @@
 ---
-title: 'Statistical whitening transformations'
-date: 2020-05-03
-permalink: /posts/2020/05/whitening/
-tags:
-  - statistics
-  - linear algebra
+layout: post
+title: "Statistical whitening transformations"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Statistical "whitening" is a family of procedures for standardizing and decorrelating a set of variables. Here, we'll review this concept in a general sense, and see two specific examples.

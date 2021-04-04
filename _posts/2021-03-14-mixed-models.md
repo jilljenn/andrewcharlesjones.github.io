@@ -1,10 +1,10 @@
 ---
+layout: post
 title: "Equivalence of mixed models and hierarchical models"
-date: 2021-03-14
-permalink: /posts/2021/03/lmms-hms/
-tags:
-  - statistics
-  - Bayesian statistics
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

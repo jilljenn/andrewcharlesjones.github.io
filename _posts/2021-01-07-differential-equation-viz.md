@@ -1,10 +1,10 @@
 ---
+layout: post
 title: "Visualizing differential equations in Python"
-date: 2021-01-07
-permalink: /posts/2021/01/differential-equation-viz/
-tags:
-  - python
-  - differential equations
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 In this post, we try to visualize a couple simple differential equations and their solutions with a few lines of Python code.

@@ -1,9 +1,10 @@
 ---
-title: 'M-estimation'
-date: 2019-12-31
-permalink: /posts/2019/12/mestimation/
-tags:
-  - statistics
+layout: post
+title: "RBF kernel as an infinite feature expansion"
+author: "Andy Jones"
+categories: journal
+tags: [M-estimation]
+<!-- image: -->
 ---
 
 

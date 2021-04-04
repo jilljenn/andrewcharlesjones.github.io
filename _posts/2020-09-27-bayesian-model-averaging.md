@@ -1,11 +1,10 @@
 ---
-title: 'Bayesian model averaging'
-date: 2020-09-27
-permalink: /posts/2020/09/bayesian-model-averaging/
-tags:
-  - statistics
-  - bayesian statistics
-  - probability
+layout: post
+title: "Bayesian model averaging"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 

@@ -1,10 +1,10 @@
 ---
-title: 'Condition numbers'
-date: 2020-05-17
-permalink: /posts/2020/05/condition-number/
-tags:
-  - linear algebra
-  - numerical analysis
+layout: post
+title: "Condition numbers"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Condition numbers measure the sensitivity of a function to changes in its inputs. We review this concept here, along with some specific examples to build intuition.

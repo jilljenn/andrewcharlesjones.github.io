@@ -1,9 +1,10 @@
 ---
-title: 'Sample complexity of linear regression'
-date: 2019-12-29
-permalink: /posts/2019/12/linregcomplexity/
-tags:
-  - learning theory
+layout: post
+title: "Sample complexity of linear regression"
+author: "Andy Jones"
+categories: journal
+tags: [learning theory]
+<!-- image: -->
 ---
 
 

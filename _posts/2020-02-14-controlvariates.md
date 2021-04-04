@@ -1,9 +1,10 @@
 ---
-title: 'Control variates'
-date: 2020-02-14
-permalink: /posts/2020/02/controlvariates/
-tags:
-  - statistics
+layout: post
+title: "Control variates"
+author: "Andy Jones"
+categories: journal
+tags: [statistics]
+<!-- image: -->
 ---
 
 Control variates are a class of methods for reducing the variance of a generic Monte Carlo estimator.

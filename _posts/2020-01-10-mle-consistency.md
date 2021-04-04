@@ -1,9 +1,10 @@
 ---
-title: 'Consistency of MLE'
-date: 2020-01-10
-permalink: /posts/2020/01/mleconsistency/
-tags:
-  - statistics
+layout: post
+title: "Consistency of MLE"
+author: "Andy Jones"
+categories: journal
+tags: [statistics]
+<!-- image: -->
 ---
 
 Maximum likelihood estimation (MLE) is one of the most popular and well-studied methods for creating statistical estimators. This post will review conditions under which the MLE is consistent.

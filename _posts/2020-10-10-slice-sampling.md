@@ -1,10 +1,10 @@
 ---
-title: 'Slice sampling'
-date: 2020-10-10
-permalink: /posts/2020/10/slice-sampling/
-tags:
-  - statistics
-  - probability
+layout: post
+title: "Slice sampling"
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Slice sampling is a method for obtaining random samples from an arbitrary distribution. Here, we walk through the basic steps of slice sampling and present two visual examples.

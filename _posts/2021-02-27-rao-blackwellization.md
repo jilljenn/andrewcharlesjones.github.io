@@ -1,9 +1,10 @@
 ---
+layout: post
 title: "Rao-Blackwellization"
-date: 2021-02-27
-permalink: /posts/2021/02/rao-blackwellization/
-tags:
-  - statistics
+author: "Andy Jones"
+categories: journal
+tags: []
+<!-- image: -->
 ---
 
 Estimators based on sampling schemes can be "Rao-Blackwellized" to reduce their variance.
