@@ -14,18 +14,12 @@ title:
         <h3>{{ post.date | date: '%Y' }}</h3>
       {% endif %}
     {% endunless %}
-
-    <!-- <li itemscope>
-      <a href="{{ site.github.url }}{{ post.url }}" style="text-decoration:none">{{ post.title }}</a>
-      <p class="post-blurb">{{ post.blurb }}</p>
-      <p class="post-date"><span> {{ post.date | date: "%B %-d" }}</span></p>
-    </li> -->
     <li itemscope>
-      <div>
-        <a href="{{ site.github.url }}{{ post.url }}" style="text-decoration:none">{{ post.title }}</a>
+      <div style="margin-top:10%;">
+        <a href="{{ site.github.url }}{{ post.url }}" style="text-decoration:none;">{{ post.title }}</a>
         <span class="post-date"> {{ post.date | date: "%B %-d" }}</span>
         <img src="{{ post.img }}" align="right" width="150">
-        <p class="post-blurb">{{ post.blurb }}</p>
+        <p class="post-date">{{ post.blurb }}</p>
       </div>
     </li>
 
