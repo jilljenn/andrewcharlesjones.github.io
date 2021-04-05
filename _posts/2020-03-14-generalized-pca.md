@@ -1,5 +1,5 @@
 layout: post
-title: "Generalized PCA"
+title: "Generalized $\\text{PCA}$"
 author: "Andy Jones"
 categories: journal
 tags: []

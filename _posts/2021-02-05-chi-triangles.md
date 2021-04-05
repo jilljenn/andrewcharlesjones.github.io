@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chi triangles"
+title: "$\\chi$ triangles"
 author: "Andy Jones"
 categories: journal
 tags: []

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Inducing points for Gaussian Processes"
+blurb: "Inducing points provide a strategy for lowering the computational cost of Gaussian process prediction by closely modeling only a subset of the input space."
+img: "/assets/inducing_points_gp_predictions.png"
 author: "Andy Jones"
 categories: journal
 tags: []

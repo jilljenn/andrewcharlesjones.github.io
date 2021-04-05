@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Equivalence of mixed models and hierarchical models"
+blurb: "Mixed models are effectively a special case of hierarchical models. In this post, I try to draw some connections between these jargon-filled modeling approaches."
+img: "/assets/XY_lmm_corrected.png"
 author: "Andy Jones"
 categories: journal
 tags: []

@@ -148,10 +148,20 @@ hr {
   list-style: none;
 }
 
-.post-date {
+.post-date {/*
   display: block;
   margin-top:3px;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;*/
+  margin-left: 1rem;
+  color: #9a9a9a;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size:0.8rem;
+}
+
+.post-blurb {
+  display: block;
+  margin-top:3px;
+  margin-bottom: 3rem;
   color: #9a9a9a;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size:0.8rem;
