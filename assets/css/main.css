@@ -265,6 +265,17 @@ hr {
   font-size: 1rem;
 }
 
+.arxiv-icon {
+    background: url('https://static.arxiv.org/static/browse/0.3.2.6/images/icons/favicon.ico');
+    height: 10px;
+    width: 10px;
+    background-size: cover;
+    background-position: right;
+    display: block;
+    float:right;
+    /* Other styles here */
+}
+
 @media (max-width: 30em) {
   .social-icons {
     float: left;
