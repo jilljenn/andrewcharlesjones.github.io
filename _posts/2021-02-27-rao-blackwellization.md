@@ -2,6 +2,8 @@
 layout: post
 title: "Rao-Blackwellization"
 author: "Andy Jones"
+blurb: "Estimators based on sampling schemes can be 'Rao-Blackwellized' to reduce their variance."
+img: ""
 categories: journal
 tags: []
 <!-- image: -->

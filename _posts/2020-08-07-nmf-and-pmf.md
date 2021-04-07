@@ -3,6 +3,8 @@ layout: post
 title: "Connection between non-negative matrix factorization and Poisson matrix factorization"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

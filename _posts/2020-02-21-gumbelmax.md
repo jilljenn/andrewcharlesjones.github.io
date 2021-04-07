@@ -3,6 +3,8 @@ layout: post
 title: "Gumbel max trick"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [statistics]
 <!-- image: -->
 ---

@@ -3,6 +3,8 @@ layout: post
 title: "Duality between maximum likelihood and maximum entropy"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

@@ -3,6 +3,8 @@ layout: post
 title: "Generating random samples from probability distributions"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [probability, statistics]
 <!-- image: -->
 ---

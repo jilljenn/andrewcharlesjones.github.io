@@ -3,6 +3,8 @@ layout: post
 title: "Introduction to VC dimension"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [machine learning,learning theory]
 <!-- image: -->
 ---

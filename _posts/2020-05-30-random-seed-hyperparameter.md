@@ -3,6 +3,8 @@ layout: post
 title: "Are random seeds hyperparameters?"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

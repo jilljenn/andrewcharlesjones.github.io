@@ -3,6 +3,8 @@ layout: post
 title: "Ito's lemma"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

@@ -3,6 +3,8 @@ layout: post
 title: "Bayesian model averaging"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

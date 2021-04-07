@@ -2,7 +2,7 @@
 layout: post
 title: "Gibbs posteriors"
 blurb: "Bayesian posterior inference requires the analyst to specify a full probabilistic model of the data generating process. Gibbs posteriors are a broader family of distributions that are intended to relax this requirement and to allow arbitrary loss functions."
-img: ""
+img: "/assets/klqp_univariate_densities.png"
 author: "Andy Jones"
 categories: journal
 tags: []

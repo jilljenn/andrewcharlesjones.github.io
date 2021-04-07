@@ -3,6 +3,8 @@ layout: post
 title: "Visualizing differential equations in Python"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

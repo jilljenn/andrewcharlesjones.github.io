@@ -3,6 +3,8 @@ layout: post
 title: "Convergence in probability vs. almost sure convergence"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [probability]
 <!-- image: -->
 ---

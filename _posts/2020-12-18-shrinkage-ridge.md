@@ -3,6 +3,8 @@ layout: post
 title: "Shrinkage in ridge regression"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

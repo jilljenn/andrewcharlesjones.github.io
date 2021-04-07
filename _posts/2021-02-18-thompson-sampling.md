@@ -2,6 +2,8 @@
 layout: post
 title: "Thompson sampling"
 author: "Andy Jones"
+blurb: "Thompson sampling is a simple Bayesian approach to selecting actions in a multi-armed bandit setting."
+img: "/assets/bandit_trajectory_example_mle.png"
 categories: journal
 tags: []
 <!-- image: -->

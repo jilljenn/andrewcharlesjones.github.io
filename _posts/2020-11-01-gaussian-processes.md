@@ -3,6 +3,8 @@ layout: post
 title: "Gaussian process regression"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

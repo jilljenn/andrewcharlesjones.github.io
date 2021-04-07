@@ -3,6 +3,8 @@ layout: post
 title: "$\\chi$ triangles"
 author: "Andy Jones"
 categories: journal
+blurb: "Describing $\\chi$ random variables as the lengths of vectors."
+img: "/assets/chitriangles_vecs.png"
 tags: []
 <!-- image: -->
 ---

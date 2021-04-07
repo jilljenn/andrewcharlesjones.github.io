@@ -3,6 +3,8 @@ layout: post
 title: "RBF kernel as an infinite feature expansion"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [M-estimation]
 <!-- image: -->
 ---

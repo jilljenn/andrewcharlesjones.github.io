@@ -3,6 +3,8 @@ layout: post
 title: "Consistency of MLE"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [statistics]
 <!-- image: -->
 ---

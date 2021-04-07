@@ -3,6 +3,8 @@ layout: post
 title: "Universal Portfolios: A simple online learning algorithm"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [algorithms]
 <!-- image: -->
 ---

@@ -3,6 +3,8 @@ layout: post
 title: "Whirlwind tour of MCMC for posterior inference"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

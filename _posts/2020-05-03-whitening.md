@@ -3,6 +3,8 @@ layout: post
 title: "Statistical whitening transformations"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

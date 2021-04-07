@@ -3,6 +3,8 @@ layout: post
 title: "Quasi-likelihoods"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

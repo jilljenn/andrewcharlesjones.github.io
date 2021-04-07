@@ -3,6 +3,8 @@ layout: post
 title: "Power iteration method"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

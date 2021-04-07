@@ -3,6 +3,8 @@ layout: post
 title: "Generalized PCA: an alternative approach"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

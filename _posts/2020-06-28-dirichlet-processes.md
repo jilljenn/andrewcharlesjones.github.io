@@ -2,6 +2,8 @@ layout: post
 title: "Dirichlet Processes: the basics"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

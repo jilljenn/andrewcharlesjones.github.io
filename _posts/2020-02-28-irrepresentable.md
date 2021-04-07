@@ -3,6 +3,8 @@ layout: post
 title: "LASSO and the irrepresentable condition"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

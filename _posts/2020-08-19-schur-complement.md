@@ -3,6 +3,8 @@ layout: post
 title: "Schur complements"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

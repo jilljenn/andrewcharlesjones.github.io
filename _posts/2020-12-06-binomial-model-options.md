@@ -3,6 +3,8 @@ layout: post
 title: "Binomial model for options pricing"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

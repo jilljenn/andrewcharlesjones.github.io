@@ -3,6 +3,8 @@ layout: post
 title: "MLE under a misspecified model"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [statistics]
 <!-- image: -->
 ---

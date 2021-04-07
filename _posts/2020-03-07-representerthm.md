@@ -3,6 +3,8 @@ layout: post
 title: "The representer theorem and kernel ridge regression"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

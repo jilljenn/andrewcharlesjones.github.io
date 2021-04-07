@@ -3,6 +3,8 @@ layout: post
 title: "Control variates"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [statistics]
 <!-- image: -->
 ---

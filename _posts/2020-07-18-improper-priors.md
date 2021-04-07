@@ -3,6 +3,8 @@ layout: post
 title: "Improper priors"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

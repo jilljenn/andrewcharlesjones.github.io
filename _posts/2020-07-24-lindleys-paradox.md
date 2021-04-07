@@ -3,6 +3,8 @@ layout: post
 title: "Lindley's paradox"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

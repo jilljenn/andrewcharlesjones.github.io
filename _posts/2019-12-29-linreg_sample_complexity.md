@@ -3,6 +3,8 @@ layout: post
 title: "Sample complexity of linear regression"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [learning theory]
 <!-- image: -->
 ---

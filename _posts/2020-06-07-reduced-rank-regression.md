@@ -3,6 +3,8 @@ layout: post
 title: "Reduced-rank regresssion"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

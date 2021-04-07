@@ -3,6 +3,8 @@ layout: post
 title: "Common matrix decompositions"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

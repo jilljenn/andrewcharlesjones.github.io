@@ -3,6 +3,8 @@ layout: post
 title: "Condition numbers"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

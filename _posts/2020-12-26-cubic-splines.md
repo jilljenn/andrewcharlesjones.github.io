@@ -3,6 +3,8 @@ layout: post
 title: "Cubic splines"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

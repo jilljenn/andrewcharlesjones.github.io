@@ -3,6 +3,8 @@ layout: post
 title: "Maximum entropy distributions"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [probability,information theory]
 <!-- image: -->
 ---

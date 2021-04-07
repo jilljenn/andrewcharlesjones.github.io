@@ -3,6 +3,8 @@ layout: post
 title: "Wiener and Ito processes"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

@@ -3,6 +3,8 @@ layout: post
 title: "James-Stein estimator"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

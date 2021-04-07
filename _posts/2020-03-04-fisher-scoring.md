@@ -3,6 +3,8 @@ layout: post
 title: "Newton's method and Fisher scoring for fitting GLMs"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

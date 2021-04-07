@@ -3,6 +3,8 @@ layout: post
 title: "Log-derivative trick"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: [statistics,machine learning]
 <!-- image: -->
 ---

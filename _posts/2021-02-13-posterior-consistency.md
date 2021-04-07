@@ -3,6 +3,8 @@ layout: post
 title: "Posterior consistency"
 author: "Andy Jones"
 categories: journal
+blurb: "Bayesian models provide a principled way to make inferences about underlying parameters. But under what conditions do those inferences converge to the truth?"
+img: "/assets/gaussian_contraction.png"
 tags: []
 <!-- image: -->
 ---

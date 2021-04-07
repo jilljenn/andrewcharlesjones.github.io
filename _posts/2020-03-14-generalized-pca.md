@@ -1,7 +1,9 @@
 layout: post
-title: "Generalized $\\text{PCA}$"
+title: "Generalized PCA"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

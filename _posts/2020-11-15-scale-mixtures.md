@@ -3,6 +3,8 @@ layout: post
 title: "Scale mixtures of normals"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---

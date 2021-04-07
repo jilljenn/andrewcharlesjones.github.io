@@ -3,6 +3,8 @@ layout: post
 title: "Estimation and Inference in probabilistic models: A whirlwind tour"
 author: "Andy Jones"
 categories: journal
+blurb: ""
+img: ""
 tags: []
 <!-- image: -->
 ---
