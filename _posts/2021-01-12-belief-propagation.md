@@ -3,8 +3,8 @@ layout: post
 title: "Belief propagation"
 author: "Andy Jones"
 categories: journal
-blurb: ""
-img: ""
+blurb: "Belief propagation is a family of message passing algorithms, often used for computing marginal distributions and maximum a posteriori (MAP) estimates of random variables that have a graph structure."
+img: "/assets/bp3.png"
 tags: []
 <!-- image: -->
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "James-Stein estimator"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "The James-Stein estimator dominates the MLE by sharing information across seemingly unrelated variables."
 img: ""
 tags: []
 <!-- image: -->

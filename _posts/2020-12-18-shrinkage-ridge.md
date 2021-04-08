@@ -3,8 +3,8 @@ layout: post
 title: "Shrinkage in ridge regression"
 author: "Andy Jones"
 categories: journal
-blurb: ""
-img: ""
+blurb: "A brief review of shrinkage in ridge regression and a comparison to OLS."
+img: "/assets/ols_ridge_lines.png"
 tags: []
 <!-- image: -->
 ---

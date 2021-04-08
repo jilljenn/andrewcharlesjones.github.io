@@ -3,7 +3,7 @@ layout: post
 title: "Duality between maximum likelihood and maximum entropy"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "There exists a duality between maximum likelihood estimation and finding the maximum entropy distribution subject to a set of linear constraints."
 img: ""
 tags: []
 <!-- image: -->

@@ -3,7 +3,7 @@ layout: post
 title: "Quasi-likelihoods"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "As their name suggests, 'quasi-likelihoods' are quantities that aren't formally likelihood functions, but can be used as replacements for formal likelihoods in more general settings."
 img: ""
 tags: []
 <!-- image: -->

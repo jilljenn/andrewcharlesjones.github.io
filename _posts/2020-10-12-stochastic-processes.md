@@ -3,8 +3,8 @@ layout: post
 title: "Wiener and Ito processes"
 author: "Andy Jones"
 categories: journal
-blurb: ""
-img: ""
+blurb: "A brief review three types of stochastic processes: Wiener processes, generalized Wiener processes, and Ito processes."
+img: "/assets/wiener_process.png"
 tags: []
 <!-- image: -->
 ---

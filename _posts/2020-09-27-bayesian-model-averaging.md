@@ -3,7 +3,7 @@ layout: post
 title: "Bayesian model averaging"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Bayesian model averaging provides a way to combine information across statistical models and account for the uncertainty embedded in each."
 img: ""
 tags: []
 <!-- image: -->

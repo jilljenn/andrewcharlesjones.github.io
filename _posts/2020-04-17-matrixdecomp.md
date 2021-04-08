@@ -3,7 +3,7 @@ layout: post
 title: "Common matrix decompositions"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Matrix decomposition methods factor a matrix $A$ into a product of two other matrices, $A = BC$. In this post, we review some of the most common matrix decompositions, and why they're useful."
 img: ""
 tags: []
 <!-- image: -->

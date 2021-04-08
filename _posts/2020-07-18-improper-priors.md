@@ -3,7 +3,7 @@ layout: post
 title: "Improper priors"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Choosing a prior distribution is a philosophically and practically challenging part of Bayesian data analysis. Noninformative priors try to skirt this issue by placing equal weight on all possible parameter values; however, these priors are often "improprer" -- we review this issue here."
 img: ""
 tags: []
 <!-- image: -->

@@ -3,7 +3,7 @@ layout: post
 title: "Scale mixtures of normals"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Here, we discuss two distributions which arise as scale mixtures of normals: the Laplace and the Student-$t$."
 img: ""
 tags: []
 <!-- image: -->

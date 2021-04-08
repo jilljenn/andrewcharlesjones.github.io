@@ -3,7 +3,7 @@ layout: post
 title: "Statistical whitening transformations"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Statistical 'whitening' is a family of procedures for standardizing and decorrelating a set of variables. Here, we'll review this concept in a general sense, and see two specific examples."
 img: ""
 tags: []
 <!-- image: -->

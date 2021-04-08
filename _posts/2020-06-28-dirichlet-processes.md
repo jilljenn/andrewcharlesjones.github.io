@@ -2,7 +2,7 @@ layout: post
 title: "Dirichlet Processes: the basics"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "The Dirichlet process (DP) is one of the most common -- and one of the most simple -- prior distributions used in Bayesian nonparametric models. In this post, we'll review a couple different interpretations of DPs."
 img: ""
 tags: []
 <!-- image: -->

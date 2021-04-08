@@ -3,8 +3,8 @@ layout: post
 title: "Gaussian process regression"
 author: "Andy Jones"
 categories: journal
-blurb: ""
-img: ""
+blurb: "A brief review of Gaussian processes with simple visualizations."
+img: "/assets/gp_prior_draws.png"
 tags: []
 <!-- image: -->
 ---

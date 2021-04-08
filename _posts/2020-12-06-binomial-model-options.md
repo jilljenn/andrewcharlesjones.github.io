@@ -3,8 +3,8 @@ layout: post
 title: "Binomial model for options pricing"
 author: "Andy Jones"
 categories: journal
-blurb: ""
-img: ""
+blurb: "The binomial model is a simple method for determining the prices of options."
+img: "/assets/call_option.png"
 tags: []
 <!-- image: -->
 ---

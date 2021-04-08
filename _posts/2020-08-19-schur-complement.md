@@ -3,7 +3,7 @@ layout: post
 title: "Schur complements"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Schur complements are quantities that arise often in linear algebra in the context of block matrix inversion. Here, we review the basics and show an application in statistics."
 img: ""
 tags: []
 <!-- image: -->

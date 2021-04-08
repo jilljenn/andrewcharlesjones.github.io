@@ -3,8 +3,8 @@ layout: post
 title: "Power iteration method"
 author: "Andy Jones"
 categories: journal
-blurb: ""
-img: ""
+blurb: "The power iteration algorithm is a numerical approach to computing the top eigenvector and eigenvalue of a matrix."
+img: "/assets/power_iteration_diff_eigvals.png"
 tags: []
 <!-- image: -->
 ---

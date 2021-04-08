@@ -3,7 +3,7 @@ layout: post
 title: "COVID-19 Zoomposium notes"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "On 4/2/20, The Dana-Farber Cancer Institute and the Brown Institute at Columbia hosted a 'zoomposium' (symposium via Zoom) about epidemiological modeling of the COVID-19 pandemic. These are my notes from the speakers' presentations."
 img: ""
 tags: []
 <!-- image: -->

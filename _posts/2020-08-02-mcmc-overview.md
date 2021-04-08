@@ -3,7 +3,7 @@ layout: post
 title: "Whirlwind tour of MCMC for posterior inference"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Markov Chain Monte Carlo (MCMC) methods encompass a broad class of tools for fitting Bayesian models. Here, we'll review some of the basic motivation behind MCMC and a couple of the most well-known methods."
 img: ""
 tags: []
 <!-- image: -->

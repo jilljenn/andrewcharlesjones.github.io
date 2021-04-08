@@ -3,7 +3,7 @@ layout: post
 title: "Reduced-rank regresssion"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Reduced-rank regression is a method for finding associations between two high-dimensional datasets with paired samples."
 img: ""
 tags: []
 <!-- image: -->

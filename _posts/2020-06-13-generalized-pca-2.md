@@ -3,7 +3,7 @@ layout: post
 title: "Generalized PCA: an alternative approach"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Principal component analysis is a widely-used dimensionality reduction technique. However, PCA has an implicit connection to the Gaussian distribution, which may be undesirable for non-Gaussian data. Here, we'll see a second approach for generalizing PCA to other distributions introduced by [Andrew Landgraf in 2015](https://etd.ohiolink.edu/!etd.send_file?accession=osu1437610558&disposition=inline)."
 img: ""
 tags: []
 <!-- image: -->

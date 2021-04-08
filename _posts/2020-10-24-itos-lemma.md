@@ -3,7 +3,7 @@ layout: post
 title: "Ito's lemma"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "A sketch of the derivation for Ito's Lemma and a simple example."
 img: ""
 tags: []
 <!-- image: -->

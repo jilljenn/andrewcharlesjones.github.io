@@ -3,7 +3,7 @@ layout: post
 title: "Condition numbers"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Condition numbers measure the sensitivity of a function to changes in its inputs. We review this concept here, along with some specific examples to build intuition."
 img: ""
 tags: []
 <!-- image: -->

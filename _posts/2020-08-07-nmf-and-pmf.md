@@ -3,7 +3,7 @@ layout: post
 title: "Connection between non-negative matrix factorization and Poisson matrix factorization"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "In this post, we draw a simple connection between the optimization problems for NMF and PMF."
 img: ""
 tags: []
 <!-- image: -->

@@ -3,8 +3,8 @@ layout: post
 title: "Visualizing differential equations in Python"
 author: "Andy Jones"
 categories: journal
-blurb: ""
-img: ""
+blurb: "In this post, we try to visualize a couple simple differential equations and their solutions with a few lines of Python code."
+img: "/assets/diffeq_fig6.png"
 tags: []
 <!-- image: -->
 ---

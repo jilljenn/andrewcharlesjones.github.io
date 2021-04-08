@@ -3,7 +3,7 @@ layout: post
 title: "Lindley's paradox"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Bayesian and frequenist methods can lead people to very different conclusions. One instance of this is exemplified in Lindley's paradox, in which a hypothesis test arrives at opposite conclusions depending on whether a Bayesian or a frequentist test is used."
 img: ""
 tags: []
 <!-- image: -->

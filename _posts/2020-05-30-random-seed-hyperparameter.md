@@ -3,7 +3,7 @@ layout: post
 title: "Are random seeds hyperparameters?"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "In many types of programming, random seeds are used to make computational results reproducible by generating a known set of random numbers. However, the choice of a random seed can affect results in non-trivial ways."
 img: ""
 tags: []
 <!-- image: -->

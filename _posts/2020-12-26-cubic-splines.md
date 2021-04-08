@@ -3,7 +3,7 @@ layout: post
 title: "Cubic splines"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Cubic splines are flexible nonparametric models. Here, we discuss some of the spline fundamentals."
 img: ""
 tags: []
 <!-- image: -->
