@@ -30,13 +30,13 @@ where $\mathcal{M}$ is a matrix manifold.
 There are two common choices for the matrix manifold $\mathcal{M}$:
 
 1. All rank $k$ linear mappings. That is, $\mathcal{M} = \mathbb{R}^{p \times k}$. This is the simplest case, where $M$ is unconstrained.
-2. Matrices with orthogonal columns. That is, $\mathcal{M} = \{M \in \mathbb{R}^{p \times k} : M^\top M = I_p\}$. This set is often denoted $\mathcal{M} = \mathcal{O}^{p \times k}$. This is perhaps the more common assumption and shows up in the most popular dimensionality reduction methods, like PCA, which we review next.
+2. Matrices with orthogonal columns. That is, $\mathcal{M} = \\{M \in \mathbb{R}^{p \times k} : M^\top M = I_p\\}$. This set is often denoted $\mathcal{M} = \mathcal{O}^{p \times k}$. This is perhaps the more common assumption and shows up in the most popular dimensionality reduction methods --- like PCA, which we review next.
 
 ## Principal component analysis (PCA)
 
 PCA has been [formulated](https://www.tandfonline.com/doi/pdf/10.1080/14786440109462720) [in](https://www.robots.ox.ac.uk/~cvrg/hilary2006/ppca.pdf) [many](https://arxiv.org/abs/2010.00554) [equivalent](https://link.springer.com/article/10.1007/BF00332918) [ways](http://www.vision.jhu.edu/teaching/learning/deeplearning19/assets/Baldi_Hornik-89.pdf). Two of the most common frameworks are the "variance maximization" perspective and the "reconstruction error minimization" perspective.
 
-We can write both of these formulations in terms of the program above. The variance maximization perspective casts PCA as finding the vectors in data space that, when the data is projected onto these vectors, maximize the variance of the resulting projections. To see this, note that given a vector $v \in \mathbb{R}^p$, the projection of $X$ onto this vector is given by $X^\top v$. Without loss of generality, we can assume that the data is mean-centered, which implies that the variance of this projection is given by
+We can write both of these formulations in terms of the program above. The variance maximization perspective casts the PCA objective as finding the vectors in data space that, when the data is projected onto these vectors, maximize the variance of the resulting projections. To see this, note that given a vector $v \in \mathbb{R}^p$, the projection of $X$ onto this vector is given by $X^\top v$. Without loss of generality, we can assume that the data is mean-centered, which implies that the variance of this projection is given by
 
 $$\text{var}(X^\top v) = (X^\top v)^\top X^\top v = v^\top XX^\top v$$
 
@@ -64,7 +64,7 @@ The solution to both of these optimization problems is given by a singular value
 
 > **Theorem** (_Eckart-Young, 1936_). The minimizer of $\\|X - \widehat{X}\\|_2$ such that $\text{rank}(\widehat{X}) \leq k$ is given by a singular value decomposition of $X.$ In particular, $\widehat{X}^\star = U_k D_k V_k^\top$ where $D_k = \text{diag}(\sigma_1, \dots, \sigma_k)$ contains the top $k$ singular values, and $U_k$ and $V_k$ contain the corresponding left and right singular vectors.
 
-Equivalently, we can summarize the data in terms of its sample covariance matrix $\Sigma = XX^\top$, which implies that
+We can summarize the data in terms of its sample covariance matrix $\Sigma = XX^\top$, which implies that
 
 $$\Sigma = U_k D_k V_k^\top (U_k D_k V_k^\top)^\top = U_k D_k V_k^\top V_k D_k U_k^\top.$$
 
@@ -135,7 +135,7 @@ Clearly, this program fits into the general framework, so we can use the same ge
 
 The similarities among all of these linear dimensionality reduction methods motivates a general-purpose optimization scheme. When the matrix $M$ is unconstrained, we can use general first- and second-order methods. 
 
-The case where $M$ is constrained to the Stiefel manifoldis more difficult. Standard gradient-based optimization methods will quickly veer off of the desired manifold. With the constraint $M \in \mathcal{O}^{p \times k}$, we need to make sure that the estimate at every step, $M^{(t)}$, remains on the manifold.
+The case where $M$ is constrained to the Stiefel manifoldis is more difficult. Standard gradient-based optimization methods will quickly veer off of the desired manifold. With the constraint $M \in \mathcal{O}^{p \times k}$, we need to make sure that the estimate at every step, $M^{(t)}$, remains on the manifold.
 
 Cunningham and Ghahramani propose a projected gradient descent method for this setting. The basic idea is to take a step in the direction of the negative gradient (as in typical gradient descent), but then project back onto the desired manifold. Here, a projection means that we place our estimate at the closest point on the manifold.
 
