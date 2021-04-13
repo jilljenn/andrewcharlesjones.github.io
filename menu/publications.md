@@ -2,6 +2,7 @@
 layout: page
 title: 
 ---
+<p style="font-size:15px;">A full list of publications can be found on <a href="https://scholar.google.com/citations?user=cdPiMskAAAAJ&hl=en">Google Scholar</a>.</p>
 <ul class="posts">
   <li itemscope>
       <div style="margin-top:10%;">

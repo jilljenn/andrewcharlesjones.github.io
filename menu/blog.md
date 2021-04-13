@@ -2,18 +2,21 @@
 layout: page
 title: 
 ---
+These posts are informal notes and may contain errors --- please let me know if you spot any.
+
 <ul class="posts">
   {% for post in site.posts %}
-
+    <div style="margin-top:10%;">
     {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
+      <h2>{{ post.date | date: '%Y' }}</h2>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
+        <h2>{{ post.date | date: '%Y' }}</h2>
       {% endif %}
     {% endunless %}
+  </div>
     <li itemscope>
       <div style="margin-top:10%;">
         <a href="{{ site.github.url }}{{ post.url }}" style="text-decoration:none;">{{ post.title }}</a>
