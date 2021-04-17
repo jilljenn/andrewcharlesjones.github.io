@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Natural gradients"
-blurb: ""
-img: ""
+blurb: "The natural gradient adjusts the gradient steps according to the geometry of the loss function."
+img: "/assets/gaussian_isocontours_fisher.png"
 author: "Andy Jones"
 categories: journal
 tags: []
@@ -10,6 +10,8 @@ tags: []
 ---
 
 $$\DeclareMathOperator*{\argmin}{arg\,min}$$
+
+THe natural gradient is a generalization of a typical gradient that accounts for the curvature of the function. When applied to an optimization problem in the form of a variant of gradient descent, it can greatly improve the convergence speed.
 
 ## Gradient descent
 
