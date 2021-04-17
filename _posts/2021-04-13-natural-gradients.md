@@ -11,7 +11,7 @@ tags: []
 
 $$\DeclareMathOperator*{\argmin}{arg\,min}$$
 
-THe natural gradient is a generalization of a typical gradient that accounts for the curvature of the function. When applied to an optimization problem in the form of a variant of gradient descent, it can greatly improve the convergence speed.
+The natural gradient is a generalization of a typical gradient that accounts for the curvature of the function. When applied to an optimization problem in the form of a variant of gradient descent, it can greatly improve the convergence speed.
 
 ## Gradient descent
 
@@ -126,8 +126,6 @@ In the right figure, we perform steepest descent using the metric $(x - x^\prime
 </center>
 
 However, in practice we won't know the full geometry of the loss function. In the toy examples above, we only knew $A$ because we constructed the problem ourselves. Thus, another challenge is locally estimating the curvature of the space.
-
-### Adam, etc.
 
 ### Fisher metric
 
