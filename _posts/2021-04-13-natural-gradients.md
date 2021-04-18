@@ -149,17 +149,7 @@ $$\log p(x | \theta) = -\frac12 \log 2\pi - \lambda - \frac12 \exp(-2\lambda) (x
 
 Taking the gradient, we have
 
-\begin{align}
-\nabla_\theta \log p(x | \theta) &= 
-\begin{bmatrix}
-\exp(-2\lambda) (x - \mu) \\\
--1 + \exp(-2\lambda)(x - \mu)^2
-\end{bmatrix} \\\
-&= \begin{bmatrix}
-\frac{1}{\sigma^2} (x - \mu) \\\
--1 + \frac{1}{\sigma^2} (x - \mu)^2
-\end{bmatrix}.
-\end{align}
+\begin{align} \nabla_\theta \log p(x | \theta) &= \begin{bmatrix} \exp(-2\lambda) (x - \mu) \\\ -1 + \exp(-2\lambda)(x - \mu)^2 \end{bmatrix} \\\ &= \begin{bmatrix} \frac{1}{\sigma^2} (x - \mu) \\\ -1 + \frac{1}{\sigma^2} (x - \mu)^2 \end{bmatrix}. \end{align}
 
 We can then compute the Fisher information matrix. Recall that the Fisher is the expectation of the outer product of the gradient:
 
@@ -309,12 +299,7 @@ where $H_t$ is the Hessian of $D(\theta_t, \theta_t)$ at $\theta_t$.
 
 The first two terms are zero. The first term is a divergence between two equal distributions, which makes the divergence zero. For the second term, we can see that
 
-\begin{align}
-	\nabla_\theta D(\theta, \theta_t) &= \nabla_\theta \mathbb{E}\_{p(x | \theta)}\left[\log \frac{p(x | \theta)}{p(x | \theta_t)}\right] \\\
-	&= \mathbb{E}\_{p(x | \theta)}\left[\nabla_\theta \log \frac{p(x | \theta)}{p(x | \theta_t)}\right] & \text{(Swap $\nabla$ and $\mathbb{E}$)} \\\
-	&= \mathbb{E}\_{p(x | \theta)}\left[\nabla_\theta \log p(x | \theta)\right] & \text{(Grad. doesn't depend on $\theta_t$)} \\\
-	&= 0.
-\end{align}
+\begin{align} \nabla_\theta D(\theta, \theta_t) &= \nabla_\theta \mathbb{E}\_{p(x | \theta)}\left[\log \frac{p(x | \theta)}{p(x | \theta_t)}\right] \\\ &= \mathbb{E}\_{p(x | \theta)}\left[\nabla_\theta \log \frac{p(x | \theta)}{p(x | \theta_t)}\right] & \text{(Swap $\nabla$ and $\mathbb{E}$)} \\\ &= \mathbb{E}\_{p(x | \theta)}\left[\nabla_\theta \log p(x | \theta)\right] & \text{(Grad. doesn't depend on $\theta_t$)} \\\ &= 0. \end{align}
 
 The final line comes from the fact that the expectation of the score is always $0$.
 
