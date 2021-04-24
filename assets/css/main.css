@@ -526,3 +526,18 @@ th, td {
 .fa-rss-square:hover {
 	color: #ff6600;
 }
+
+.sidenote, .marginnote, figcaption { 
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*font-size: 1.1rem;*/
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative; 
+    color: #912b1c;
+    font-size: 80%;
+}
