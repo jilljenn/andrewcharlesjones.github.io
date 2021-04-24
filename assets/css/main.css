@@ -527,7 +527,7 @@ th, td {
 	color: #ff6600;
 }
 
-.sidenote, .marginnote, figcaption { 
+.sidenote, .marginnote { 
     float: right;
     clear: right;
     margin-right: -60%;
