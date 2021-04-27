@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RBF kernel as an infinite feature expansion"
+title: "$M$-estimation"
 author: "Andy Jones"
 categories: journal
 blurb: ""
