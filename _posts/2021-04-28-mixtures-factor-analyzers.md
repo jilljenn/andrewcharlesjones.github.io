@@ -18,11 +18,7 @@ The mixture of factor analyzers model combines clustering and dimensionality red
 
 Suppose we have a dataset of $n$ samples, $x_1, \dots, x_n$. Factor analysis assumes the following model for each data point $x_i \in \mathbb{R}^p$.
 
-\begin{align}
-x_i &= W z_i + \epsilon_i \\\
-z_i &\sim \mathcal{N}(0, I_k) \\\
-\epsilon_i &\sim \mathcal{N}(0, \Psi)
-\end{align}
+\begin{align} x_i &= W z_i + \epsilon_i \\\ z_i &\sim \mathcal{N}(0, I_k) \\\ \epsilon_i &\sim \mathcal{N}(0, \Psi) \end{align}
 
 where $\Psi$ is a $p \times p$ diagonal covariance matrix. The latent variables $z_i$ are unobserved, lower-dimensional representations of the data points. The parameters in this case are the loading matrix $W$ and the noise covariance $\Psi$. We can't directly find maximum likelihood solutions for these parameters due to the latent variables $z_i$, so we use expectation maximization (EM) instead. We give a brief review of EM for factor analysis below.
 
