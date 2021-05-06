@@ -34,17 +34,11 @@ Recall that EM is an iterative algorithm, and suppose we're currently on iterati
 
 where $W^t$ and $\Psi^t$ are the current parameter estimates. Expanding the log likelihood, we have
 
-\begin{align}
-Q &= \sum\limits_{i=1}^n \mathbb{E}\left[ -\frac{p}{2} \log 2\pi - \frac{1}{2} \log |\Psi| -  \frac12 (x_i - Wz_i)^\top \Psi^{-1} (x_i - Wz_i) \right] \\\
-&= -\frac{np}{2} \log 2\pi - \frac{n}{p} \log |\Psi| - \sum\limits_{i=1}^n \mathbb{E}\left[\frac12 (x_i - Wz_i)^\top \Psi^{-1} (x_i - Wz_i) \right].
-\end{align}
+\begin{align} Q &= \sum\limits_{i=1}^n \mathbb{E}\left[ -\frac{p}{2} \log 2\pi - \frac{1}{2} \log \|\Psi\| -  \frac12 (x_i - Wz_i)^\top \Psi^{-1} (x_i - Wz_i) \right] \\\ &= -\frac{np}{2} \log 2\pi - \frac{n}{p} \log \|\Psi\| - \sum\limits_{i=1}^n \mathbb{E}\left[\frac12 (x_i - Wz_i)^\top \Psi^{-1} (x_i - Wz_i) \right]. \end{align}
 
 Expanding the last term, we have
 
-\begin{align}
-Q &= -\frac{np}{2} \log 2\pi - \frac{n}{p} \log |\Psi| \\\
-&- \frac12 \sum\limits_{i=1}^n x_i^\top \Psi^{-1} x_i + 2 \sum\limits_{i=1}^nx_i^\top \Psi^{-1} W \mathbb{E}[z_i] - \sum\limits_{i=1}^n \text{tr}\left(W^\top \Psi^{-1} W \mathbb{E}[z_i z_i^\top]\right).
-\end{align}
+\begin{align} Q &= -\frac{np}{2} \log 2\pi - \frac{n}{p} \log \|\Psi\| \\\ &- \frac12 \sum\limits_{i=1}^n x_i^\top \Psi^{-1} x_i + 2 \sum\limits_{i=1}^nx_i^\top \Psi^{-1} W \mathbb{E}[z_i] - \sum\limits_{i=1}^n \text{tr}\left(W^\top \Psi^{-1} W \mathbb{E}[z_i z_i^\top]\right). \end{align}
 
 Taking the derivative with respect to $W$, we have
 
@@ -62,11 +56,7 @@ $$\frac{\partial Q}{\partial \Psi^{-1}} = \frac{n}{2} \Psi - \frac12 \sum\limits
 
 Plugging in our estimate for $\widehat{W}$ in the last term, we have
 
-\begin{align}
-\frac{\partial Q}{\partial \Psi^{-1}} &= \frac{n}{2} \Psi - \frac12 \sum\limits_{i=1}^n x_i x_i^\top + 2 \widehat{W} \sum\limits_{i=1}^n \mathbb{E}[z_i] x_i^\top - \sum\limits_{i=1}^n \left(\frac{\sum\limits_{i=1}^n x_i \mathbb{E}[z_i]^\top}{\left( \sum\limits_{i=1}^n \mathbb{E}[z_i z_i^\top] \right)^{-1}}\right) \mathbb{E}[z_i z_i^\top] \widehat{W}^\top \\\
-&= \frac{n}{2} \Psi - \frac12 \sum\limits_{i=1}^n x_i x_i^\top + 2 \widehat{W} \sum\limits_{i=1}^n \mathbb{E}[z_i] x_i^\top - \sum\limits_{i=1}^n x_i \mathbb{E}[z_i]^\top \widehat{W}^\top \\\
-&= \frac{n}{2} \Psi - \frac12 \sum\limits_{i=1}^n x_i x_i^\top + \widehat{W} \sum\limits_{i=1}^n \mathbb{E}[z_i] x_i^\top. \\\
-\end{align}
+\begin{align} \frac{\partial Q}{\partial \Psi^{-1}} &= \frac{n}{2} \Psi - \frac12 \sum\limits_{i=1}^n x_i x_i^\top + 2 \widehat{W} \sum\limits_{i=1}^n \mathbb{E}[z_i] x_i^\top - \sum\limits_{i=1}^n \left(\frac{\sum\limits_{i=1}^n x_i \mathbb{E}[z_i]^\top}{\left( \sum\limits_{i=1}^n \mathbb{E}[z_i z_i^\top] \right)^{-1}}\right) \mathbb{E}[z_i z_i^\top] \widehat{W}^\top \\\ &= \frac{n}{2} \Psi - \frac12 \sum\limits_{i=1}^n x_i x_i^\top + 2 \widehat{W} \sum\limits_{i=1}^n \mathbb{E}[z_i] x_i^\top - \sum\limits_{i=1}^n x_i \mathbb{E}[z_i]^\top \widehat{W}^\top \\\ &= \frac{n}{2} \Psi - \frac12 \sum\limits_{i=1}^n x_i x_i^\top + \widehat{W} \sum\limits_{i=1}^n \mathbb{E}[z_i] x_i^\top. \\\ \end{align}
 
 Solving for $\Psi$, this leaves us with
 
@@ -76,10 +66,7 @@ Solving for $\Psi$, this leaves us with
 
 The expectations of the latent variables $z_i$ and their outer products $z_i z_i^\top$ are given by
 
-\begin{align}
-\mathbb{E}[z_i] &= \beta x_i \\\
-\mathbb{E}[z_i z_i^\top] &= I - \beta \Lambda + \beta x_i x_i^\top \beta^\top
-\end{align}
+\begin{align} \mathbb{E}[z_i] &= \beta x_i \\\ \mathbb{E}[z_i z_i^\top] &= I - \beta \Lambda + \beta x_i x_i^\top \beta^\top \end{align}
 
 where $\beta = \Lambda^\top (\Psi + \Lambda \Lambda^top)^{-1}$.
 
@@ -106,10 +93,7 @@ $$\mathbb{E}_{\log p(z_i = k | x_i, \widetilde{\theta}_k)}[p(x_i, z_i | \theta_k
 
 We will then maximize this expected log likelihood with respect to $\theta_k$. First, let's expand the expectation,
 
-\begin{align}
-\mathbb{E}\_{p(z_i = k | x_i, \widetilde{\theta}\_k)}[\log p(x_i, z_i | \theta_k)] &= \sum\limits_{k=1}^K p(z_i = k | x_i, \widetilde{\theta}\_k) \log p(x_i, z_i | \theta_k) \\\
-&= \sum\limits_{k=1}^K \frac{p(x_i | z_i = k, \widetilde{\theta}\_k) \pi_k}{\sum\limits_{k^\prime=1}^K p(x_i | z_i = k^\prime, \widetilde{\theta}\_{k^\prime}) \pi_{k^\prime}} \log p(x_i, z_i | \theta_k)
-\end{align}
+\begin{align} \mathbb{E}\_{p(z_i = k \| x_i, \widetilde{\theta}\_k)}[\log p(x_i, z_i \| \theta_k)] &= \sum\limits_{k=1}^K p(z_i = k \| x_i, \widetilde{\theta}\_k) \log p(x_i, z_i \| \theta_k) \\\ &= \sum\limits_{k=1}^K \frac{p(x_i \| z_i = k, \widetilde{\theta}\_k) \pi_k}{\sum\limits_{k^\prime=1}^K p(x_i \| z_i = k^\prime, \widetilde{\theta}\_{k^\prime}) \pi_{k^\prime}} \log p(x_i, z_i \| \theta_k) \end{align}
 
 where we have plugged in the posterior for $z_i$. To simplify notation, let's define
 
@@ -125,11 +109,7 @@ $$\mathcal{L}(\theta_k) = \sum\limits_{i=1}^n \sum\limits_{k=1}^K \gamma_{ik} \l
 
 We can now maximize with respect to $\theta_k$. Let's start by optimizing $\mu_k$, and let's write out the expected log likelihood in more detail and drop terms that don't depend on $\mu_k$.
 
-\begin{align}
-\mathcal{L}(\theta_k) &= \sum\limits_{i=1}^n \sum\limits_{k=1}^K \gamma_{ik} \left(\log \pi_k - \log 2\pi \sigma^2\_k - \frac{1}{2\sigma^2\_k}(x_i - \mu_k)^2\right) \\\
-&= (\log \pi_k - \log 2\pi \sigma^2\_k) \sum\limits_{i=1}^n \gamma_{ik} - \frac{1}{2\sigma^2\_k} \sum\limits_{i=1}^n (x_i^2 - 2x_i \mu_k + \mu_k^2) \\\
-&= \underbrace{(\log \pi_k - \log 2\pi \sigma^2\_k) \sum\limits_{i=1}^n \gamma_{ik} - \frac{1}{2\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} x_i^2}\_{C} - \frac{1}{2\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} (-2x_i \mu_k + \mu_k^2). \\\
-\end{align}
+\begin{align} \mathcal{L}(\theta_k) &= \sum\limits_{i=1}^n \sum\limits_{k=1}^K \gamma_{ik} \left(\log \pi_k - \log 2\pi \sigma^2\_k - \frac{1}{2\sigma^2\_k}(x_i - \mu_k)^2\right) \\\ &= (\log \pi_k - \log 2\pi \sigma^2\_k) \sum\limits_{i=1}^n \gamma_{ik} - \frac{1}{2\sigma^2\_k} \sum\limits_{i=1}^n (x_i^2 - 2x_i \mu_k + \mu_k^2) \\\ &= \underbrace{(\log \pi_k - \log 2\pi \sigma^2\_k) \sum\limits_{i=1}^n \gamma_{ik} - \frac{1}{2\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} x_i^2}\_{C} - \frac{1}{2\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} (-2x_i \mu_k + \mu_k^2). \\\ \end{align}
 
 Here, $C$ is constant with respect to $\mu_k$. Taking the derivative wrt $\mu_k$, we have
 
@@ -141,16 +121,11 @@ $$\widehat{\mu}_k = \frac{1}{\sum\limits_{i=1}^n \gamma_{ik}} \sum\limits_{i=1}^
 
 Thus, $\widehat{\mu}_k$ is just a weighted average of the data, where the weights are the posterior expectations of each sample's mixture membership. Plugging this back into $\mathcal{L_k}$ and optimizing $\sigma^2_k$, we have
 
-\begin{align}
-\mathcal{L}(\theta_k) &= \underbrace{(\log \pi_k - \log 2\pi) \sum\limits_{i=1}^n \gamma_{ik}}\_{C} - \log \sigma^2\_k \sum\limits_{i=1}^n \gamma_{ik} - \frac12 (\sigma^{2}\_k)^{-1} \sum\limits_{i=1}^n \gamma_{ik} (x_i - \widehat{\mu}_k)^2. \\\
-\end{align}
+\begin{align} \mathcal{L}(\theta_k) &= \underbrace{(\log \pi_k - \log 2\pi) \sum\limits_{i=1}^n \gamma_{ik}}\_{C} - \log \sigma^2\_k \sum\limits_{i=1}^n \gamma_{ik} - \frac12 (\sigma^{2}\_k)^{-1} \sum\limits_{i=1}^n \gamma_{ik} (x_i - \widehat{\mu}_k)^2. \\\ \end{align}
 
 Taking the derivative wrt $\sigma^2\_k$, we have
 
-\begin{align}
-\frac{\partial \mathcal{L}}{\partial \sigma^2\_k} &= \frac{1}{\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} + (\sigma^{2}\_k)^{-2} \sum\limits_{i=1}^n \gamma_{ik} (x_i - \widehat{\mu}\_k)^2 \\\
-&= \frac{1}{\sigma^2\_k} \left( \sum\limits_{i=1}^n \gamma_{ik} - \frac{1}{\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} (x_i - \widehat{\mu}\_k)^2 \right).
-\end{align}
+\begin{align} \frac{\partial \mathcal{L}}{\partial \sigma^2\_k} &= \frac{1}{\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} + (\sigma^{2}\_k)^{-2} \sum\limits_{i=1}^n \gamma_{ik} (x_i - \widehat{\mu}\_k)^2 \\\ &= \frac{1}{\sigma^2\_k} \left( \sum\limits_{i=1}^n \gamma_{ik} - \frac{1}{\sigma^2\_k} \sum\limits_{i=1}^n \gamma_{ik} (x_i - \widehat{\mu}\_k)^2 \right). \end{align}
 
 Setting this to zero, we find that the optimal $\sigma^2\_k$ is given by
 
@@ -188,11 +163,7 @@ $$\omega_{ik} =
 
 Then, conditioned on $\omega_{ik}$, the model is
 
-\begin{align}
-x_i | \\{\omega_{ik}\\} &= \prod\limits_{k=1}^K \left(\Lambda_k z_{ik} + \mu_k + \epsilon_i\right)^{\omega_{ik}} \\\
-z_{ik} &\sim \mathcal{N}(0, I_d) \\\
-\epsilon_i &\sim \mathcal{N}(0, \Psi).
-\end{align}
+\begin{align} x_i \| \\{\omega_{ik}\\} &= \prod\limits_{k=1}^K \left(\Lambda_k z_{ik} + \mu_k + \epsilon_i\right)^{\omega_{ik}} \\\ z_{ik} &\sim \mathcal{N}(0, I_d) \\\ \epsilon_i &\sim \mathcal{N}(0, \Psi). \end{align}
 
 The marginal distribution of $x_i$ is
 
@@ -212,21 +183,11 @@ Then, the mean contributes naturally through the matrix product $\Lambda_k z_i$.
 
 To compute the EM updates, let's first write out the complete data log likelihood.
 
-\begin{align}
-&p(x, z | \Lambda, \Psi) = \log \prod\limits_{i=1}^n \prod\limits_{k=1}^K \left[p(x_i, z_{ik} | \Lambda_k, \Psi)\right]^{\omega_{ik}} \\\
-&= \sum\limits_{i=1}^n \sum\limits_{k=1}^K \omega_{ik} \left[ \log p(x_i, z_{ik} | \Lambda_k, \Psi)\right] \\\
-&= \sum\limits_{i=1}^n \sum\limits_{k=1}^K \omega_{ik} \left( -\frac{D}{2} \log 2\pi - \frac12 \log |\Psi| - \frac12 (x_i - \Lambda_k z_{ik})^\top \Psi^{-1} (x_i - \Lambda z_{ik}) \right) \\\
-&= -\frac{nD}{2} - \frac{n}{2} \log |\Psi| - \frac12 \sum\limits_{i=1}^n \sum\limits_{k=1}^K \omega_{ik} (x_i - \Lambda_k z_{ik})^\top \Psi^{-1} (x_i - \Lambda z_{ik}) \\\
-&= C - \frac{n}{2} \log |\Psi| - \sum\limits_{i=1}^n \sum\limits_{k=1}^K \left(\frac12 \omega_{ik} x_i^\top \Psi^{-1} x_i - \omega_{ik} x_i^\top \Lambda_k z_{ik} + \frac12 \omega_{ik} z_{ik}^\top \Lambda_k^\top \Psi^{-1} \Lambda_k z_{ik}\right) \\\
-&= C - \frac{n}{2} \log |\Psi| - \sum\limits_{i=1}^n \sum\limits_{k=1}^K \left(\frac12 \omega_{ik} \text{tr}(\Psi^{-1} x_i x_i^\top) - \omega_{ik} x_i^\top \Lambda_k z_{ik} + \frac12 \omega_{ik} \text{tr}(\Lambda_k^\top \Psi^{-1} \Lambda_k z_{ik}  z_{ik}^\top) \right). \\\
-\end{align}
+\begin{align} &p(x, z \| \Lambda, \Psi) = \log \prod\limits_{i=1}^n \prod\limits_{k=1}^K \left[p(x_i, z_{ik} \| \Lambda_k, \Psi)\right]^{\omega_{ik}} \\\ &= \sum\limits_{i=1}^n \sum\limits_{k=1}^K \omega_{ik} \left[ \log p(x_i, z_{ik} \| \Lambda_k, \Psi)\right] \\\ &= \sum\limits_{i=1}^n \sum\limits_{k=1}^K \omega_{ik} \left( -\frac{D}{2} \log 2\pi - \frac12 \log \|\Psi\| - \frac12 (x_i - \Lambda_k z_{ik})^\top \Psi^{-1} (x_i - \Lambda z_{ik}) \right) \\\ &= -\frac{nD}{2} - \frac{n}{2} \log \|\Psi\| - \frac12 \sum\limits_{i=1}^n \sum\limits_{k=1}^K \omega_{ik} (x_i - \Lambda_k z_{ik})^\top \Psi^{-1} (x_i - \Lambda z_{ik}) \\\ &= C - \frac{n}{2} \log \|\Psi\| - \sum\limits_{i=1}^n \sum\limits_{k=1}^K \left(\frac12 \omega_{ik} x_i^\top \Psi^{-1} x_i - \omega_{ik} x_i^\top \Lambda_k z_{ik} + \frac12 \omega_{ik} z_{ik}^\top \Lambda_k^\top \Psi^{-1} \Lambda_k z_{ik}\right) \\\ &= C - \frac{n}{2} \log \|\Psi\| - \sum\limits_{i=1}^n \sum\limits_{k=1}^K \left(\frac12 \omega_{ik} \text{tr}(\Psi^{-1} x_i x_i^\top) - \omega_{ik} x_i^\top \Lambda_k z_{ik} + \frac12 \omega_{ik} \text{tr}(\Lambda_k^\top \Psi^{-1} \Lambda_k z_{ik}  z_{ik}^\top) \right). \\\ \end{align}
 
 Taking the expectation with respect to the posterior, we have
 
-\begin{align}
-&\mathbb{E}[p(x | z, \Lambda, \Psi)] \\\
-=& C - \frac{n}{2} \log |\Psi| - \sum\limits_{i=1}^n \sum\limits_{k=1}^K \left(\frac12 \mathbb{E}[\omega_{ik}] \text{tr}(\Psi^{-1} x_i x_i^\top) - \mathbb{E}[\omega_{ik}] x_i^\top \Lambda_k \mathbb{E}[z_{ik}] + \frac12 \mathbb{E}[\omega_{ik}] \text{tr}(\Lambda_k^\top \Psi^{-1} \Lambda_k \mathbb{E}[z_{ik} z_{ik}^\top]) \right).
-\end{align}
+\begin{align} &\mathbb{E}[p(x \| z, \Lambda, \Psi)] \\\ =& C - \frac{n}{2} \log \|\Psi\| - \sum\limits_{i=1}^n \sum\limits_{k=1}^K \left(\frac12 \mathbb{E}[\omega_{ik}] \text{tr}(\Psi^{-1} x_i x_i^\top) - \mathbb{E}[\omega_{ik}] x_i^\top \Lambda_k \mathbb{E}[z_{ik}] + \frac12 \mathbb{E}[\omega_{ik}] \text{tr}(\Lambda_k^\top \Psi^{-1} \Lambda_k \mathbb{E}[z_{ik} z_{ik}^\top]) \right). \end{align}
 
 To compute the expectations, notice that
 
@@ -234,29 +195,19 @@ $$\mathbb{E}[\omega_{ik} z_i] = \mathbb{E}[\omega_{ik}] \mathbb{E}[z_i],~~~~\mat
 
 Let's compute these.
 
-\begin{align}
-\mathbb{E}[\omega_{ik}] &= \sum\limits_{k=1}^K \omega_{ik} p(\omega_{ik} | x_i, \Lambda_k, \Psi) \\\
-&= \sum\limits_{k=1}^K \frac{p(x_i | \omega_{ik}, \Lambda_k, \Psi) p(\omega_{ik})}{\sum\limits_{k^\prime=1}^K p(\omega_{ik^\prime}, x_i, \Lambda_{k^\prime}, \Psi)} \\\
-&= \sum\limits_{k=1}^K \frac{\pi_k \mathcal{N}(x_i | 0, \Lambda_k \Lambda_k^\top + \Psi)}{\sum\limits_{k^\prime=1}^K \pi_{k^\prime} \mathcal{N}(x_i | 0, \Lambda_{k^\prime} \Lambda_{k^\prime}^\top + \Psi)}.
-\end{align}
+\begin{align} \mathbb{E}[\omega_{ik}] &= \sum\limits_{k=1}^K \omega_{ik} p(\omega_{ik} \| x_i, \Lambda_k, \Psi) \\\ &= \sum\limits_{k=1}^K \frac{p(x_i \| \omega_{ik}, \Lambda_k, \Psi) p(\omega_{ik})}{\sum\limits_{k^\prime=1}^K p(\omega_{ik^\prime}, x_i, \Lambda_{k^\prime}, \Psi)} \\\ &= \sum\limits_{k=1}^K \frac{\pi_k \mathcal{N}(x_i \| 0, \Lambda_k \Lambda_k^\top + \Psi)}{\sum\limits_{k^\prime=1}^K \pi_{k^\prime} \mathcal{N}(x_i \| 0, \Lambda_{k^\prime} \Lambda_{k^\prime}^\top + \Psi)}. \end{align}
 
 We can see that this expectation closely resembles that of the Gaussian mixture model, where the expectation of each cluster membership is the (normalized) likelihood of the data under that cluster's parameters.
 
 The expectations of $z_i$ are identical to those for factor analysis, but we use the component-specific parameterss (including the mean offset):
 
-\begin{align}
-\mathbb{E}[z_i | \omega_{ik}] &= \mathbb{E}[\omega_{ik}] \beta_k (x_i - \mu_k) \\\
-\mathbb{E}[z_i z_i^\top | \omega_{ik}] &= \left( I - \beta_k \Lambda_k + \beta_k (x_i - \mu_k) (x_i - \mu_k)^\top \beta_k^\top \right)
-\end{align}
+\begin{align} \mathbb{E}[z_i \| \omega_{ik}] &= \mathbb{E}[\omega_{ik}] \beta_k (x_i - \mu_k) \\\ \mathbb{E}[z_i z_i^\top \| \omega_{ik}] &= \left( I - \beta_k \Lambda_k + \beta_k (x_i - \mu_k) (x_i - \mu_k)^\top \beta_k^\top \right) \end{align}
 
 where again $\beta_k = \Lambda_k^\top (\Psi + \Lambda \Lambda^\top)^{-1}$.
 
 Plugging these into the objective function, taking derivatives with respect to $\Lambda_k$ and $\Psi$ (much of which is very similar computation to that for factor analysis), we find the following parameter updates.
 
-\begin{align}
-\widehat{\Lambda}\_k &= \left( \sum\limits_{i=1}^n \mathbb{E}[\omega_{ik}] x_i \mathbb{E}[z_i | x_i, \omega_{ik}]^\top \right) \left( \sum\limits_{i=1}^n \mathbb{E}[\omega_{ik}] \mathbb{E}[z_i z_i^\top | x_i, \omega_{ik}]^\top \right)^{-1} \\\
-\widehat{\Psi} &= \frac1n \text{diag}\left\\{ \sum\limits_{i=1}^n \sum\limits_{k=1}^K \mathbb{E}[\omega_{ik}] \left( x_i - \widehat{\Lambda}\_k \mathbb{E}[z_i | \omega_{ik}] \right) x_i^\top \right\\}.
-\end{align}
+\begin{align} \widehat{\Lambda}\_k &= \left( \sum\limits_{i=1}^n \mathbb{E}[\omega_{ik}] x_i \mathbb{E}[z_i \| x_i, \omega_{ik}]^\top \right) \left( \sum\limits_{i=1}^n \mathbb{E}[\omega_{ik}] \mathbb{E}[z_i z_i^\top \| x_i, \omega_{ik}]^\top \right)^{-1} \\\ \widehat{\Psi} &= \frac1n \text{diag}\left\\{ \sum\limits_{i=1}^n \sum\limits_{k=1}^K \mathbb{E}[\omega_{ik}] \left( x_i - \widehat{\Lambda}\_k \mathbb{E}[z_i \| \omega_{ik}] \right) x_i^\top \right\\}. \end{align}
 
 Let's now see how this works in practice.
 
