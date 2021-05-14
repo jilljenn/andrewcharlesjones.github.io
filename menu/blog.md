@@ -21,7 +21,11 @@ These posts are informal notes and may contain errors --- please let me know if 
       <div style="margin-top:10%;">
         <a href="{{ site.github.url }}{{ post.url }}" style="text-decoration:none;">{{ post.title }}</a>
         <span class="post-date"> {{ post.date | date: "%B %-d" }}</span>
-        {% if post.img != "" %}
+        {% if post.img == "/assets/thinking_emoji.png" %}
+          <img src="{{ post.img }}" align="right" width="75">
+        {% elsif post.img == "/assets/chitriangles_vecs.png" %}
+          <img src="{{ post.img }}" align="right" width="100">
+        {% elsif post.img != "" %}
           <img src="{{ post.img }}" align="right" width="150">
         {% else %}
           <img src="/assets/dice-six-solid.svg" align="right" width="40" style="opacity: 0.5;">
