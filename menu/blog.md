@@ -26,7 +26,7 @@ These posts are informal notes and may contain errors --- please let me know if 
         {% elsif post.img == "/assets/chitriangles_vecs.png" %}
           <img src="{{ post.img }}" align="right" width="100">
         {% elsif post.img == "/assets/clock-regular.svg" %}
-          <img src="{{ post.img }}" align="right" width="79">
+          <img src="{{ post.img }}" align="right" width="80">
         {% elsif post.img != "" %}
           <img src="{{ post.img }}" align="right" width="150">
         {% else %}
