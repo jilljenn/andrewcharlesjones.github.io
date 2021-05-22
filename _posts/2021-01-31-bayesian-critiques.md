@@ -4,7 +4,7 @@ title: "Critiques of Bayesian statistics"
 author: "Andy Jones"
 categories: journal
 blurb: "'Recommending that scientists use Bayes' theorem is like giving the neighborhood kids the key to your F-16' and other critiques."
-img: "/assets/thinking_emoji.png"
+img: ""
 tags: []
 <!-- image: -->
 ---
