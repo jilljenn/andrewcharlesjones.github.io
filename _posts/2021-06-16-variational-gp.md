@@ -12,7 +12,7 @@ tags: []
 $$\DeclareMathOperator*{\argmin}{arg\,min}$$
 $$\DeclareMathOperator*{\argmax}{arg\,max}$$
 
-Gaussian processes (GPs) can be used as flexible priors for functions in a range of problem types, from regression to dimensionality reduction. Performing inference and prediction with GPs, however, can be computationally demanding, so many approximation methods have been developed. Here, we review that formalizes a popular approximation tool for GPS --- inducing points --- in the context of variational inference.
+Gaussian processes (GPs) can be used as flexible priors for functions in a range of problem types, from regression to dimensionality reduction. Performing inference and prediction with GPs, however, can be computationally demanding, so many approximation methods have been developed. Here, we review a method that formalizes a popular approximation tool for GPs --- inducing points --- in the context of variational inference.
 
 We first provide a basic review of GPs and GP regression, and then we describe the variational approximation.
 
