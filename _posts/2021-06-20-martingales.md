@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Martingales"
-blurb: ""
+blurb: "Martingales are a special type of stochastic process that are, in a sense, unpredictable."
 img: ""
 author: "Andy Jones"
 categories: journal
@@ -82,7 +82,7 @@ Recall that a stochastic process is a sequence of random variables. We can relat
 
 > **Definition**. A stochastic process $\\{X_n\\}, n = 0, 1, \dots$ is *adapted* to a filtration $\\{\mathcal{F}_n\\}$ if $\sigma(X_n) \subseteq \mathcal{F}_n$ for every $n$.
 
-Let's again consider our coin flip example, this time expanding the story. Instead of just flipping the coin twice, we'll flip the coin $n$ times. Suppose we start with $0\\$$, and whenever the coin flip reads heads we receive $1\\$$, and whenever it reads tails, we lose $1\\$$. In this case, $X_n$ denotes our total earnings or losses, which is a random variable. This is a random walk.
+Let's again consider our coin flip example, this time expanding the story. Instead of just flipping the coin twice, we'll flip the coin $n$ times. Suppose we start with $\\$0$, and whenever the coin flip reads heads we receive $\\$1$, and whenever it reads tails, we lose $\\$1$. In this case, $X_n$ denotes our total earnings or losses, which is a random variable. This is a random walk.
 
 Clearly, the easiest way to construct a filtration such that $X_n$ is adapted to it is to take $\mathcal{F}_n = \sigma(X_0, X_1, \dots, X_n)$. This is sometimes called the canonical filtration.
 
@@ -100,7 +100,7 @@ Let's turn back to our coin flip example. Recall that we earn $\\$1$ when the co
 
 We can show that this is a martingale. When we reflip the coin on each step, it has equal chance of coming up heads and tails -- and thus we have equal chance of gaining or losing $\\$1$. Thus, the expected value of our cumulative gain on step $n+1$ is going to be our gain so far, $X_n$. More formally,
 
-\begin{align} \mathbb{E}[X_{n + 1} | \mathcal{F}\_n] &= \mathbb{E}[x_{n + 1} | \mathcal{F}\_n] + \mathbb{E}[X_n] \\\ &= 0.5 \cdot 1 + 0.5 \cdot -1 + \mathbb{E}[X_n] \\\ &= \mathbb{E}[X_n]. \end{align}
+\begin{align} \mathbb{E}[X_{n + 1} \| \mathcal{F}\_n] &= \mathbb{E}[x_{n + 1} \| \mathcal{F}\_n] + \mathbb{E}[X_n] \\\ &= 0.5 \cdot 1 + 0.5 \cdot -1 + \mathbb{E}[X_n] \\\ &= \mathbb{E}[X_n]. \end{align}
 
 Furthermore, it's also enlightening to compute the expectation of $X_n$ without conditioning on the filtration. Using the tower property, we have
 
