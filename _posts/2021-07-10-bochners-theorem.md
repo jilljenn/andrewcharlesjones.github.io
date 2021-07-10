@@ -142,10 +142,10 @@ The right side of this equality implies that the sample value $w_k$ controls the
 Then, as we draw more samples (i.e., as we let $K$ increase), this amounts to drawing multiple of these waves and taking their average. The animation below illustrates this. We start out with just one sample, and then we incrementally increase $K$ one by one, keeping track of a running average on the right panel. As $K$ increases, we see that the function on the right approaches the exponentiated quadratic.
 
 <center>
-<video width="500" height="500" autoplay loop>
-  <source src="/assets/bochner_animation.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
+<video style="width:100%; text-align:center; display:block; margin-top:50px;" autoplay loop>
+<source src="/assets/bochner_animation.mp4" type="video/mp4">
 </video>
+<figcaption style="margin-bottom:50px;"><i></i></figcaption>
 </center>
 
 ## References
