@@ -22,9 +22,9 @@ First, let's review Bochner's theorem.
 
 > **Theorem** (Bochner). Every positive definite function is the Fourier transform of a positive finite Borel measure.
 
-In the context of kernels, we have a very important corrollary.
+In the context of kernels, we have a very important corollary.
 
-> **Corrollary**. For any shift invariant kernel, $k(x - y)$, there exists a positive measure $\mu$ such that
+> **Corollary**. For any shift invariant kernel, $k(x - y)$, there exists a positive measure $\mu$ such that
 >
 > $$k(x - y) = \int_{\mathbb{R}} e^{-iw (x - y)}.$$
 
