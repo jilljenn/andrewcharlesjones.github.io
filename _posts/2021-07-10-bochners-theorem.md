@@ -26,7 +26,7 @@ In the context of kernels, we have a very important corollary.
 
 > **Corollary**. For any shift invariant kernel, $k(x - y)$, there exists a positive measure $\mu$ such that
 >
-> $$k(x - y) = \int_{\mathbb{R}} e^{-iw (x - y)}.$$
+> $$k(x - y) = \int_{\mathbb{R}} e^{-iw (x - y)} p(w) dw.$$
 
 ## Sampling to approximate kernels
 
