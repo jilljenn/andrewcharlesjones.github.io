@@ -148,6 +148,75 @@ Then, as we draw more samples (i.e., as we let $K$ increase), this amounts to dr
 <figcaption style="margin-bottom:50px;"><i></i></figcaption>
 </center>
 
+## Code
+
+Below is the code to produce the animation.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+from sklearn.gaussian_process.kernels import RBF
+import matplotlib.animation as animation
+import matplotlib.image as mpimg
+import os
+
+from os.path import join as pjoin
+
+import matplotlib
+font = {"size": 25}
+matplotlib.rc("font", **font)
+matplotlib.rcParams["text.usetex"] = True
+
+SAVE_DIR = "/path/to/save"
+
+xvalues = np.linspace(-10, 10, 50)
+yvalues = np.linspace(-10, 10, 50)
+xx, yy = np.meshgrid(xvalues, yvalues)
+points = np.concatenate([np.atleast_2d(xx.ravel()), np.atleast_2d(yy.ravel())]).T
+deltas = points[:, 0] - points[:, 1]
+
+xs = np.linspace(-4, 4)
+ys = norm.pdf(xs)
+w_samples = np.random.normal(size=100)
+amplitudes = np.zeros(len(points[:, 1]))
+
+for ii, ww in enumerate(w_samples):
+    plt.figure(figsize=(14, 7))
+    plt.cla()
+    plt.subplot(121)
+    plt.plot(xs, ys, color="black")
+    plt.xlabel("w")
+    plt.ylabel("density")
+    plt.axvline(ww, linestyle="--", color="red")
+    amplitudes += np.cos(ww * (0 - points[:, 1]))
+
+    plt.subplot(122)
+    plt.plot(points[:, 1], amplitudes / (ii + 1), color="black")
+    plt.xlabel(r"$\delta$")
+    plt.tight_layout()
+    plt.savefig(pjoin("tmp", "tmp{}.png".format(ii)))
+    plt.close()
+
+
+fig = plt.figure()
+ims = []
+for ii in range(len(w_samples)):
+    fname = "./tmp/tmp{}.png".format(ii)
+    img = mpimg.imread(fname)
+    im = plt.imshow(img)
+    ax = plt.gca()
+    ax.set_yticks([])
+    ax.set_xticks([])
+    ims.append([im])
+    os.remove(fname)
+
+
+writervideo = animation.FFMpegWriter(fps=5)
+
+ani.save(pjoin(SAVE_DIR, "bochner_animation.mp4"), writer=writervideo, dpi=1000)
+```
+
 ## References
 
 - Greg Shakhnarovich's [notes on random projections](https://home.ttic.edu/~gregory/courses/LargeScaleLearning/lectures/proj_learn2.pdf)
