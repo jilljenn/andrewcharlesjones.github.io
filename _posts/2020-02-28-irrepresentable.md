@@ -3,7 +3,7 @@ layout: post
 title: "LASSO and the irrepresentable condition"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "In this post, we cover a condition that is necessary and sufficient for the LASSO estimator to work correctly."
 img: ""
 tags: []
 <!-- image: -->

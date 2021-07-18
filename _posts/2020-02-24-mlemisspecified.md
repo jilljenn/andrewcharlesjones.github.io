@@ -3,7 +3,7 @@ layout: post
 title: "MLE under a misspecified model"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "When we construct and analyze statistical estimators, we often assume that the model is correctly specified. However, in practice, this is rarely the case --- our assumed models are usually approximations of the truth, but they're useful nonetheless."
 img: ""
 tags: [statistics]
 <!-- image: -->

@@ -3,7 +3,7 @@ layout: post
 title: "Consistency of MLE"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Maximum likelihood estimation (MLE) is one of the most popular and well-studied methods for creating statistical estimators. This post will review conditions under which the MLE is consistent."
 img: ""
 tags: [statistics]
 <!-- image: -->

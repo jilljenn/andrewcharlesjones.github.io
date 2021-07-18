@@ -2,7 +2,7 @@ layout: post
 title: "Generalized PCA"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Principal component analysis (PCA) in its typical form implicitly assumes that the observed data matrix follows a Gaussian distribution. However, PCA can be generalized to allow for other distributions -- here, we take a look at its generalization for exponential families introduced by [Collins et al. in 2001](https://papers.nips.cc/paper/2078-a-generalization-of-principal-components-analysis-to-the-exponential-family.pdf)."
 img: ""
 tags: []
 <!-- image: -->

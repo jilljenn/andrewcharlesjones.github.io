@@ -3,7 +3,7 @@ layout: post
 title: "Control variates"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Control variates are a class of methods for reducing the variance of a generic Monte Carlo estimator."
 img: ""
 tags: [statistics]
 <!-- image: -->

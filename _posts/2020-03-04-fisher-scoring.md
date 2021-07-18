@@ -3,7 +3,7 @@ layout: post
 title: "Newton's method and Fisher scoring for fitting GLMs"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Generalized linear models are flexible tools for modeling various response disributions. This post covers one common way of fitting them."
 img: ""
 tags: []
 <!-- image: -->

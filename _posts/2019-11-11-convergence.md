@@ -3,7 +3,7 @@ layout: post
 title: "Convergence in probability vs. almost sure convergence"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "When thinking about the convergence of random quantities, two types of convergence that are often confused with one another are convergence in probability and almost sure convergence. Here, I give the definition of each and a simple example that illustrates the difference. The example comes from the textbook *Statistical Inference* by Casella and Berger, but I'll step through the example in more detail."
 img: ""
 tags: [probability]
 <!-- image: -->

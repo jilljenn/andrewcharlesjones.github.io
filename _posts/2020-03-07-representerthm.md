@@ -3,7 +3,7 @@ layout: post
 title: "The representer theorem and kernel ridge regression"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "The representer theorem is a powerful result that implies a certain type of duality between solutions to function estimation problems."
 img: ""
 tags: []
 <!-- image: -->

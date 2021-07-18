@@ -3,7 +3,7 @@ layout: post
 title: "Gumbel max trick"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "The Gumbel max trick is a method for sampling from discrete distributions using only a deterministic function of the distributions' parameters."
 img: ""
 tags: [statistics]
 <!-- image: -->

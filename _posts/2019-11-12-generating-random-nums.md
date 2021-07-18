@@ -3,7 +3,7 @@ layout: post
 title: "Generating random samples from probability distributions"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "I take for granted that I can easily generate random samples from a variety of probability distributions in NumPy, R, and other statistical software. However, the process for generating these quantities is somewhat nontrivial, and we'll look under the hood at one example in this post."
 img: ""
 tags: [probability, statistics]
 <!-- image: -->

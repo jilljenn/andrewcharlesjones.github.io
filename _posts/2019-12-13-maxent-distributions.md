@@ -3,7 +3,7 @@ layout: post
 title: "Maximum entropy distributions"
 author: "Andy Jones"
 categories: journal
-blurb: ""
+blurb: "Maximum entropy distributions are those that are the 'least informative' (i.e., have the greatest entropy) among a class of distributions with certain constraints. The principle of maximum entropy has roots across information theory, statistical mechanics, Bayesian probability, and philosophy. For this post, we'll focus on the simple definition of maximum entropy distributions."
 img: ""
 tags: [probability,information theory]
 <!-- image: -->
