@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Conjugate gradients"
-blurb: "Traditional "
+blurb: "Conjugate gradient descent is an approach to optimization that accounts for second-order structure of the objective function."
 img: ""
 author: "Andy Jones"
 categories: journal
