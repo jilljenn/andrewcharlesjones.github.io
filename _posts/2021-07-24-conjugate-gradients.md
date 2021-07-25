@@ -22,19 +22,19 @@ where $\mathbf{A} \in \mathbb{R}^{d \times d}$ and $\mathbf{b} \in \mathbb{R}^d$
 
 One situation that arises frequently that requires solving linear systems is the minimization of a quadratic function. Specifically, consider the following optimization program:
 
-$$\min_\mathbf{x} \frac12 \mathbf{x}^\top \mathbf{A} \mathbf{x} + \mathbf{x}^\top \mathbf{b}.$$
+$$\min_\mathbf{x} \frac12 \mathbf{x}^\top \mathbf{A} \mathbf{x} - \mathbf{x}^\top \mathbf{b}.$$
 
-Clearly, the gradient with respect to $x$ is
+where again $\mathbf{A}$ and $\mathbf{b}$ are known. The gradient with respect to $\mathbf{x}$ is
 
-$$\nabla_{\mathbf{x}} \left[\frac12 \mathbf{x}^\top \mathbf{A} \mathbf{x} + \mathbf{x}^\top \mathbf{b}\right] = \mathbf{A} \mathbf{x} + \mathbf{b}.$$
+$$\nabla_{\mathbf{x}} \left[\frac12 \mathbf{x}^\top \mathbf{A} \mathbf{x} - \mathbf{x}^\top \mathbf{b}\right] = \mathbf{A} \mathbf{x} - \mathbf{b}.$$
 
-In order to minimize our original quadratic function, we'd like to find the zeros of this linear equation such that $\mathbf{A}\mathbf{x} = \mathbf{b}.$
+In order to minimize our original quadratic function, we'd like to find the zeros of this linear equation. Equivalently, we would like to find $\mathbf{x}$ such that $\mathbf{A}\mathbf{x} = \mathbf{b}.$
 
 ### Gaussian likelihoods
 
-When working with Gaussian statistical models, we often encounter likelihoods of the form
+When working with Gaussian statistical models, we often encounter log likelihoods of the form
 
-$$LL = -\frac12 \log |\mathbf{A}| -\frac12 \mathbf{b}^\top \mathbf{A}^{-1} \mathbf{b}$$
+$$LL \propto -\frac12 \log |\mathbf{A}| -\frac12 \mathbf{b}^\top \mathbf{A}^{-1} \mathbf{b}$$
 
 where $\mathbf{A}$ is the covariance matrix of a $d$-dimensional multivariate Gaussian $\mathcal{N}(\mathbf{0}, \mathbf{A})$ in this case. Computing the inverse $\mathbf{A}^{-1}$ will require $O(d^3)$ computation in general. However, if we instead try to directly estimate $\mathbf{A}^{-1} \mathbf{b}$, we can see this is a linear system. In particular, the problem is to find $\mathbf{x}$ such that
 
@@ -62,19 +62,19 @@ Specifically, CGD accounts for the second-order curvature of the loss landscape.
 
 ### Conjugacy
 
-Two vectors $\mathbf{u}$ and $\mathbf{v}$ are said to be $\mathbf{A}$-orthogonal or conjugate with respect to $\mathbf{A}$ if
+Two vectors $\mathbf{u}$ and $\mathbf{v}$ are said to be $\mathbf{A}$-orthogonal or "conjugate with respect to $\mathbf{A}$" if
 
 $$\mathbf{u}^\top \mathbf{A} \mathbf{v} = 0.$$
 
 In other words, $\mathbf{u}$ and $\mathbf{v}$ are orthogonal after accounting for the structure imposed by $\mathbf{A}.$ Note that if $\mathbf{A} = \mathbf{I}$, where $\mathbf{I}$ is the identity matrix, we recover the classic Euclidean notion of orthogonality.
 
-To visualize this notion of orthogonality/conjugacy, consider the animation below. Each plot shows the contours for a quadratic loss function for varying values of $\mathbf{A}$. On top of the contours we plot one vector $(-7, 0)^\top$ in black whose starting point is $(7, 7)^\top.$ Finally, we plot a vector that is $\mathbf{A}$-orthogonal to the black vector in red.
+To visualize this notion of orthogonality/conjugacy, consider the animation below. Each plot shows the contours for a quadratic loss function for varying values of $\mathbf{A}$. On top of the contours we plot one vector $(-7, 0)^\top$ in black whose starting point is $(7, 7)^\top.$ We also plot a vector that is $\mathbf{A}$-orthogonal to the black vector in red.
 
 <center>
 <video style="width:100%; text-align:center; display:block; margin-top:50px;" autoplay loop>
 <source src="/assets/conjugate_gradient_animation.mp4" type="video/mp4">
 </video>
-<figcaption style="margin-bottom:50px;"><i></i></figcaption>
+<figcaption style="margin-bottom:50px;"><i>Illustration of $\mathbf{A}$-orthogonality, also known as conjugacy with respect to $\mathbf{A}.$ For a fixed vector in black, we show an $\mathbf{A}$-orthogonal vector in red for a series of values for $\mathbf{A}.$</i></figcaption>
 </center>
 
 We can see that when $\mathbf{A} = \mathbf{I}$ in the middle of the animation, we recover the traditional notion of orthogonality (a $90^{\circ}$ angle between the vectors). However, for other values of $\mathbf{A}$, orthogonality takes a different form that accounts for the stretching of the contours.
@@ -119,6 +119,32 @@ $$\begin{bmatrix} 1 & -0.5 \\ -0.5 & 1 \end{bmatrix}.$$
 
 Suppose our starting point is $x_0 = (8, 3)^\top,$ and we run both GD and CGD to find $\mathbf{x}^\star.$
 
+Below is a simple Python function for running CGD. For simplicity, it assumes $\mathbf{b} = \mathbf{0}.$
+
+```python
+def CGD(A):
+    d = A.shape[0]                          # Dimension of problem
+    xhat = np.random.normal(size=d)         # Starting point
+
+    # Prepare for first step
+    g = -A @ xhat                           # Compute gradient
+    p = g                                   # First step is in direction of grad
+    g_len = g.T @ g                         # For normalization
+
+    # Start running CGD
+    for ii in range(len(xhat)):
+            Ap = A @ p
+            alpha = g_len / (p.T @ A @ p)   # Step size
+            step = alpha * p                # Combine direction and step size
+            xhat += step                    # Take step
+            g = g - alpha * A @ p
+            g_len_new = g.T @ g
+            p = g + (g_len_new / g_len) * p # Update p
+            g_len = g_len_new
+
+    return xhat
+```
+
 The left panel shows the steps taken by GD. We can see that GD criss-crosses back and forth across the loss landscape, eventually reaching the minimum after several steps.
 
 The right panel shows CGD. We can see that the first step is identical to the first step of GD. This makes sense, as there are no orthogonality constraints on the first step. However, we see that the second step is different from GD. This arises becuase we have projected out the contribution from the direction of the first step. This leads us directly into the minimum in this case.
@@ -126,7 +152,7 @@ The right panel shows CGD. We can see that the first step is identical to the fi
 <center>
 <figure>
   <img src="/assets/conjugate_gradient_descent.png">
-  <figcaption><i></i></figcaption>
+  <figcaption><i>Gradient descent and conjugate gradient descent on a toy problem.</i></figcaption>
 </figure>
 </center>
 
