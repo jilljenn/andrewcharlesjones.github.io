@@ -18,10 +18,7 @@ Neural networks effectively, become equivalent to Gaussian processes as the numb
 
 Suppose we have a set of inputs $\mathbf{x}_i \in \mathbb{R}^D$ and corresponding outputs $y_i \in \mathbb{R}$ for $i = 1, \dots, n$. Let's construct a simple neural network with one hidden layer. Assume that there are $H$ hidden units and each unit has an identical element-wise nonlinearity $g(\cdot)$. The functional form of a neural network with one hidden layer can be written as follows.
 
-\begin{align}
-f(\mathbf{x}_i) &= \mathbf{w}_2^\top \mathbf{h}_i + b_2 \\\
-\mathbf{h}_i &= g(\mathbf{W}_1 \mathbf{x}_i + \mathbf{b}_1).
-\end{align}
+\begin{align} f(\mathbf{x}_i) &= \mathbf{w}_2^\top \mathbf{h}_i + b_2 \\\ \mathbf{h}_i &= g(\mathbf{W}_1 \mathbf{x}_i + \mathbf{b}_1). \end{align}
 
 where $\mathbf{h}_i \in \mathbb{R}^H$ is a vector of the outputs of the hidden units, $\mathbf{W}_1 \in \mathbb{R}^{H \times D}$ and $\mathbf{w}_2 \in \mathbb{R}^{H}$ are network weights, and $\mathbf{b}_1 \in \mathbb{R}^{H}$ and $b_2 \in \mathbb{R}$ are intercept terms.
 
@@ -60,19 +57,11 @@ $$\mathbb{E}_{\theta}[f(\mathbf{x}_i)] = \mathbb{E}[\mathbf{w}_2^\top \mathbf{h}
 
 To compute the covariance, let's start from scratch and write out the basic definition of covariance, and expand terms.
 
-\begin{align}
-\mathbb{E}\_\theta[f(\mathbf{x}\_i) f(\mathbf{x}\_j)] &= \mathbb{E}\_\theta[(\mathbf{w}\_2^\top \mathbf{h}\_i + b_2) (\mathbf{w}\_2^\top \mathbf{h}\_j + b_2)] \\\
-&= \mathbb{E}\_{\theta}[(\mathbf{w}\_2^\top \mathbf{h}\_i) (\mathbf{w}\_2^\top \mathbf{h}\_j)] + \mathbb{E}\_{\theta}[(\mathbf{w}\_2^\top \mathbf{h}\_i) b_2] \\\
-& ~~~~~~ + \mathbb{E}\_{\theta}[(\mathbf{w}_2^\top \mathbf{h}_j) b_2] + \mathbb{E}\_{\theta}[b_2^2].
-\end{align}
+\begin{align} \mathbb{E}\_\theta[f(\mathbf{x}\_i) f(\mathbf{x}\_j)] &= \mathbb{E}\_\theta[(\mathbf{w}\_2^\top \mathbf{h}\_i + b_2) (\mathbf{w}\_2^\top \mathbf{h}\_j + b_2)] \\\ &= \mathbb{E}\_{\theta}[(\mathbf{w}\_2^\top \mathbf{h}\_i) (\mathbf{w}\_2^\top \mathbf{h}\_j)] + \mathbb{E}\_{\theta}[(\mathbf{w}\_2^\top \mathbf{h}\_i) b_2] \\\ & ~~~~~~ + \mathbb{E}\_{\theta}[(\mathbf{w}_2^\top \mathbf{h}_j) b_2] + \mathbb{E}\_{\theta}[b_2^2]. \end{align}
 
 We can split out each expectation into expectations over the relevant parameters and begin to simplify terms:
 
-\begin{align}
-&\mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_i) (\mathbf{w}_2^\top \mathbf{h}_j)] + \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_i)] \underbrace{\mathbb{E}\_{b_2}[b_2]}\_{0} \\\
-& ~~~~~~+ \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_j)] \underbrace{\mathbb{E}\_{b_2}[b_2]}\_{0} + \underbrace{\mathbb{E}\_{b_2}[b_2^2]}\_{\sigma^2_b} \\\
-=& \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_i) (\mathbf{w}_2^\top \mathbf{h}_j)] + \sigma^2_b.
-\end{align}
+\begin{align} &\mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_i) (\mathbf{w}_2^\top \mathbf{h}_j)] + \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_i)] \underbrace{\mathbb{E}\_{b_2}[b_2]}\_{0} \\\ & ~~~~~~+ \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_j)] \underbrace{\mathbb{E}\_{b_2}[b_2]}\_{0} + \underbrace{\mathbb{E}\_{b_2}[b_2^2]}\_{\sigma^2_b} \\\ =& \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}[(\mathbf{w}_2^\top \mathbf{h}_i) (\mathbf{w}_2^\top \mathbf{h}_j)] + \sigma^2_b. \end{align}
 
 Finally, let's expand the inner products, which will further simplify the covariance:
 
@@ -80,11 +69,7 @@ $$\mathbb{E}_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}\left[\left(\sum\limits_{
 
 Because the parameters for each hidden unit are independent of one another, the expectation of all cross terms (between hidden units) will be zero. Thus, our covariance simplifies as
 
-\begin{align}
-& \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}\left[\left(\sum\limits\_{k=1}^H w\_{2k}^2\right) \left(\sum\limits\_{k=1}^H h\_{ik} h\_{jk} \right)\right] + \sigma^2_b \\\
-& \left(\sum\limits\_{k=1}^H \mathbb{E}\_{\mathbf{w}_2} [w\_{2k}^2]\right) \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1}\left[\left(\sum\limits\_{k=1}^H h\_{ik} h\_{jk} \right)\right] + \sigma^2_b \\\
-=& H\sigma^2\_{\mathbf{w}_2}\mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1}\left[\sum\limits\_{k=1}^H h\_{ik} h\_{jk} \right] + \sigma^2_b.
-\end{align}
+\begin{align} & \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1, \mathbf{w}_2}\left[\left(\sum\limits\_{k=1}^H w\_{2k}^2\right) \left(\sum\limits\_{k=1}^H h\_{ik} h\_{jk} \right)\right] + \sigma^2_b \\\ & \left(\sum\limits\_{k=1}^H \mathbb{E}\_{\mathbf{w}_2} [w\_{2k}^2]\right) \mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1}\left[\left(\sum\limits\_{k=1}^H h\_{ik} h\_{jk} \right)\right] + \sigma^2_b \\\ =& H\sigma^2\_{\mathbf{w}_2}\mathbb{E}\_{\mathbf{W}_1, \mathbf{b}_1}\left[\sum\limits\_{k=1}^H h\_{ik} h\_{jk} \right] + \sigma^2_b. \end{align}
 
 This final form implies that the covariance function imposed by a given network will depend on the activation function $g(\cdot)$, as well as the prior distributions on the input-to-hidden parameters, $\mathbf{W}\_1, \mathbf{b}\_1.$ Several closed-form covariance functions have been derived for specific settings of $g(\cdot)$ and the prior distributions (see the [References](#references) for some examples).
 
