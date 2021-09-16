@@ -5,7 +5,7 @@ author: "Andy Jones"
 categories: journal
 blurb: "Here, we'll look at linear regression from a statistical learning theory perspective. In particular, we'll derive the number of samples necessary in order to achieve a certain level of regression error. We'll also see a technique called 'discretization' that allows for proving things about infinite sets by relying on results in finite sets."
 img: ""
-tags: [learning theory]
+tags: []
 <!-- image: -->
 ---
 

@@ -5,7 +5,7 @@ author: "Andy Jones"
 categories: journal
 blurb: "In this post we'll cover a simple algorithm for managing a portfolio of assets called the Universal Portfolio, developed by Thomas Cover in the 90s. Although the method was developed in the context of finance, it applies more generally to the setting of online learning."
 img: ""
-tags: [algorithms]
+tags: []
 <!-- image: -->
 ---
 

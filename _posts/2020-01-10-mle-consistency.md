@@ -5,7 +5,7 @@ author: "Andy Jones"
 categories: journal
 blurb: "Maximum likelihood estimation (MLE) is one of the most popular and well-studied methods for creating statistical estimators. This post will review conditions under which the MLE is consistent."
 img: ""
-tags: [statistics]
+tags: []
 <!-- image: -->
 ---
 

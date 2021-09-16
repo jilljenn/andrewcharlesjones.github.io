@@ -5,7 +5,7 @@ author: "Andy Jones"
 categories: journal
 blurb: "This post briefly covers a broad class of statistical estimators: M-estimators. We'll review the basic definition, some well-known special cases, and some of its asymptotic properties."
 img: ""
-tags: [M-estimation]
+tags: []
 <!-- image: -->
 ---
 

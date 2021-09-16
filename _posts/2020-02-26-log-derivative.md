@@ -5,7 +5,7 @@ author: "Andy Jones"
 categories: journal
 blurb: "The log-derivative trick is really just a simple application of the chain rule. However, it allows us to rewrite expectations in a way that is amenable to Monte Carlo approximation."
 img: ""
-tags: [statistics,machine learning]
+tags: []
 <!-- image: -->
 ---
 
