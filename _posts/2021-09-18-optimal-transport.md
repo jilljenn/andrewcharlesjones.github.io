@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Monge and Kontorovich formulations of the Optimal Transport problem"
-blurb: ""
+blurb: "The field of optimal transport is concerned with finding routes for the movement of mass that minimize cost. Here, we review two of the most popular framings of the OT problem and demonstrate some solutions with simple numerical examples."
 img: ""
 author: "Andy Jones"
 categories: journal
