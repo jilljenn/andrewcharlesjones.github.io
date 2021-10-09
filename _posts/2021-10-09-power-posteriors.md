@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Power posteriors"
-blurb: ""
+blurb: "Power posteriors are one approach for making Bayesian inference robust to model misspecification."
 img: ""
 author: "Andy Jones"
 categories: journal
@@ -33,7 +33,7 @@ Bayesian inference relies on transparent modeling assumptions to make conclusion
 
 Suppose we observe a dataset $x = (x_1, \cdots, x_n)$ and we posit the following generic model with parameter(s) $\theta$:
 
-\begin{align} x_i | \theta &\stackrel{ind}{\sim} p(x | \theta) \\\ \theta &\sim \pi(\theta), \end{align}
+\begin{align} x_i \| \theta &\stackrel{ind}{\sim} p(x \| \theta) \\\ \theta &\sim \pi(\theta), \end{align}
 
 where the first line describes the likelihood, and $\pi$ is a prior for $\theta$. A straightforward application of Bayes rule gives us the posterior for $\theta$:
 
