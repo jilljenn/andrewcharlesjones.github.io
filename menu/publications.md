@@ -4,13 +4,22 @@ title:
 ---
 <p style="font-size:15px;">A full list of publications can be found on <a href="https://scholar.google.com/citations?user=cdPiMskAAAAJ&hl=en">Google Scholar</a>.</p>
 <ul class="posts">
-  <li itemscope>
+    <li itemscope>
       <div style="margin-top:10%;">
         <a href="https://arxiv.org/abs/2102.06731" style="text-decoration:none;">Contrastive latent variable modeling with application to case-control sequencing experiments</a>
         <p style="margin-top:-2px;"><span class="post-date"><i>Andrew Jones</i>, F. William Townes, Didong Li, Barbara E. Engelhardt. <i>The Annals of Applied Statistics (2021).</i></span></p>
         <p style="margin-top:-16px; margin-left:17px;"><a href="https://arxiv.org/abs/2102.06731" target="_blank"><img src="https://static.arxiv.org/static/browse/0.3.2.6/images/icons/favicon.ico" width="18" style="position:relative; top:3px;"></a>
         <a href="/files/cplvm.pdf" target="_blank"><i class="fa fa-file"  style="margin-left: 9px"></i></a>
         <a href="https://github.com/andrewcharlesjones/cplvm" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
+      </div>
+    </li>
+    <li itemscope>
+      <div style="margin-top:10%;">
+        <a href="https://arxiv.org/abs/2102.06731" style="text-decoration:none;">Nested policy reinforcement learning</a>
+        <p style="margin-top:-2px;"><span class="post-date">Aishwarya Mandyam, <i>Andrew Jones</i>, Krzysztof Laudanski, Barbara E. Engelhardt.</span></p>
+        <p style="margin-top:-16px; margin-left:17px;"><a href="https://arxiv.org/abs/2110.02879" target="_blank"><img src="https://static.arxiv.org/static/browse/0.3.2.6/images/icons/favicon.ico" width="18" style="position:relative; top:3px;"></a>
+        <a href="/files/nfqi.pdf" target="_blank"><i class="fa fa-file"  style="margin-left: 9px"></i></a>
+        <a href="https://github.com/bee-hive/nested-policy-rl" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
       </div>
     </li>
     <li itemscope>
