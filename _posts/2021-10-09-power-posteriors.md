@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Power posteriors"
-blurb: "Power posteriors are one approach for making Bayesian inference robust to model misspecification."
+blurb: "Power posteriors are a slight deviation from standard Bayesian posteriors and offer a simple approach for making Bayesian inference robust to model misspecification."
 img: ""
 author: "Andy Jones"
 categories: journal
