@@ -164,6 +164,10 @@ We can then put the prior back in and approximate the integral with a sum over o
 
 We can see that the last term is exactly the power posterior, with $\gamma = \alpha/n$. Thus, the coarsened posterior is a generalization of the power posterior, where the power posterior corresponds to a special approximation to the case when $R \sim \text{Exp}(\alpha)$ and the divergence measure is the KL divergence.
 
+## Code
+
+The code for producing the visualizations in this post can be found in [this GitHub repo](https://github.com/andrewcharlesjones/power-posterior-viz).
+
 ## References
 
 - Miller, Jeffrey W., and David B. Dunson. "Robust Bayesian inference via coarsening." Journal of the American Statistical Association (2018).
