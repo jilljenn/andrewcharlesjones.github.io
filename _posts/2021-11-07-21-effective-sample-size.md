@@ -45,7 +45,7 @@ Let's recall the central limit theorem (in informal terms). Suppose we have a se
 
 In the classical CLT, we crucially assume that the $N$ samples are **independent** of one another. However, in most MCMC sampling approaches, samples drawn sequentially will be positively correlated (or _autocorrelated_, in the parlance of time-series) with one another. When samples exhibit autocorrelation, the sequence contains less information content about the underlying distribution in some sense. This is because the information content in any two correlated samples is partially reduntant with one another, whereas two independent samples are more likely more to provide new information about the distribution.
 
-Furthermore, when samples are correlated, the classical CLT no longer holds. When samples are positively correlated, we should expect the limiting variance in Equation \ref{eq:1} to be larger than $\sigma^2 / n$. Intuitively, this is the case because our estimate of the mean of $X$ will be more uncertain since each sample contains less information compared to the independent case.
+Furthermore, when samples are correlated, the classical CLT no longer holds. When samples are positively correlated, we should expect the limiting variance in Equation \ref{eq:1} to be larger than $\sigma^2 / N$. Intuitively, this is the case because our estimate of the mean of $X$ will be more uncertain since each sample contains less information compared to the independent case.
 
 ## Autocorrelation
 
