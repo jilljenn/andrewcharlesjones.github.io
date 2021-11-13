@@ -144,8 +144,6 @@ To visualize these limiting distributions, below we overlay Gaussian densities w
 </figure>
 </center>
 
-
-
 ## References
 
 - Geyer, Charles J. "Introduction to markov chain monte carlo." Handbook of markov chain monte carlo 20116022 (2011): 45.
