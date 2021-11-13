@@ -236,6 +236,7 @@ Below, we can see that neither the standard Bayes nor the empirical Bayes poster
 ## References
 
 - Smyth, Gordon K. "Linear models and empirical bayes methods for assessing differential expression in microarray experiments." Statistical applications in genetics and molecular biology 3.1 (2004).
+- Casella, George. "An introduction to empirical Bayes data analysis." The American Statistician 39.2 (1985): 83-87.
 - David Robinson's book, *Introduction to Empirical Bayes: Examples from Baseball Statistics*.
 - David Robinson's [post on empirical Bayes](http://varianceexplained.org/r/empirical_bayes_baseball/).
 
