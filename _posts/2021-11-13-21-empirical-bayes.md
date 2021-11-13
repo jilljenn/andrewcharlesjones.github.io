@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Empirical Bayes"
-blurb: ""
+blurb: "Empirical Bayesian methods use a counterintuitive approach to the problem of choosing priors: selecting priors that are informed by the data itself."
 img: ""
 author: "Andy Jones"
 categories: journal
