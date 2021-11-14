@@ -29,7 +29,7 @@ $$\DeclareMathOperator*{\argmax}{arg\,max}$$
 
 Bayesian inference requires the analyst to carefully state their modeling assumptions. One of the central steps in specifying a model is choosing prior distributions for parameters of interest. However, this step is one of the most controversial parts of Bayesian methodology: Selecting priors can be a highly subjective exercise, and it's often difficult to justify choosing one prior over another.
 
-Empirical Bayesian approaches try to partially alleviate this issue by selecting priors using the data itself. At first, this can sound antithetical to the Bayesian mindset: Priors should be set *before* observing any data (it's in the name after all). However, empirical Bayesian analysis can help modelers choose more useful properties, and it turns out to have some nice properties.
+Empirical Bayesian approaches try to partially alleviate this issue by selecting priors using the data itself. At first, this can sound antithetical to the Bayesian mindset: Priors should be set *before* observing any data (it's in the name after all). However, empirical Bayesian analysis can help modelers choose more useful priors, and it turns out to have some nice properties.
 
 In this post, we give two simple example applications of empirical Bayes methods.
 
@@ -37,7 +37,7 @@ In this post, we give two simple example applications of empirical Bayes methods
 
 Suppose we have a dataset with $p$ features, and we have $n$ observations for each feature. Let $x_{ij}$ be the $i$th observation of the $j$th feature. Now, let's suppose we're interested in estimating the mean of each feature, $\mu_j = \mathbb{E}[x_{ij}]$ for $j = 1,\dots,p$.
 
-As a more concrete example, in a gene expression study we may have collected measurements on the expression level of $p$ genes, with $n$ replicates of each. In this case, the replicates may be from different biological or technical replicated samples, which we assume to be drawn from the same underlying population. Then we might be interested in estimating the mean expression value of each gene. Typical values for the number of replicates are around $3$ to $5$. With a low number of observations for each gene, it's difficult to robustly estimate a full posterior for the mean of each gene. However, with an empirical Bayes approach, we can share information across genes to get a better estimate.
+As a more concrete example, in a gene expression study we may have collected measurements on the expression level of $p$ genes, with $n$ replicates of each. In this case, the replicates may be from different biological or technical replicated samples, which we assume to be drawn from the same underlying population. Then we might be interested in estimating the mean expression value of each gene in this population. In real world studies, typical values for the number of replicates can be around $3$ to $5$. With a low number of observations for each gene, it's difficult to robustly estimate a full posterior for the mean of each gene. However, with an empirical Bayes approach, we can share information across genes to get a better estimate.
 
 Consider the following two-stage hierarchical model for this dataset:
 
@@ -45,17 +45,17 @@ Consider the following two-stage hierarchical model for this dataset:
 
 where $\mu_0$ and $\sigma^2_0$ are the parameters of the prior distribution. For simplicity, let's assume that the likelihood variance is known to be $\sigma^2=1$. To reiterate, we're interested in computing the posterior $p(\mu_j \| x\_{1j}, \dots, x\_{nj})$.
 
-In a typical Bayesian setting, the analyst would choose $\mu_0$ and $\sigma^2_0$ in order to fully specify the prior. This is typically done using prior knowledge about the domain, although it's far from being a perfect science. Choosing these prior parameters is a controversial step in Bayesian data analysis, as the choices are often not given full justification.
+In a typical Bayesian setting, the analyst would choose $\mu_0$ and $\sigma^2_0$ in order to fully specify the prior. This is typically done using prior knowledge about the domain, although it's far from a perfect science. Choosing these prior parameters is a controversial step in Bayesian data analysis, as the choices are often not given full justification.
 
-Once the prior is set, we can compute the posterior for $\mu$:
+Once the prior is set, we can compute the posterior for $\mu_j$ using the closed-form Gaussian posterior:
 
 $$\mu_j | x_{1j}, \dots, x_{n_j j} \sim \mathcal{N}\left(\frac{1}{n + 1} \sum_{i=1}^n x_{ij} + \mu_0), \frac{1}{1 / \sigma^2_0 + n / \sigma^2}\right).$$
 
 Taking an empirical Bayesian approach, we could instead choose $\mu_0$ and $\sigma^2_0$ based on the data itself. In particular, if we assume that the features $j=1,\dots,p$ are somehow related to one another, we can share information across the features so that we have a more robust estimate of the mean for each individual feature. Returning to the gene expression example, this means that we assume that all genes are expected to be drawn from some underlying distribution over gene expression. It's not clear *a priori* what the mean and variance of this gene distribution looks like, so we can use our observed data to learn about it.
 
-One empiprical Bayesian approach is to set the prior paramters with the observed mean and variance in the data itself. In particular, let $\bar{x}\_j = \frac{1}{n_j} \sum_{i=1}^{n_j} x_{ij}$. 
+A straightforward empirical Bayesian approach is to set the prior paramters with the observed mean and variance in the data itself. In particular, let $\bar{x}\_j = \frac{1}{n_j} \sum_{i=1}^{n} x_{ij}$. 
 
-To see how this would work, let's first generate some data with the code below.
+To see how this would work, let's first generate some data with the code below. We use $p=20,000$ features (approximately the number of genes in the human genome).
 
 ```python
 import numpy as np
@@ -164,15 +164,15 @@ Suppose we have $n$ two-sided coins, each of which shows either heads or tails o
 
 \begin{align} x_{ij} &\sim \text{Bern}(\theta_j) \\\ \theta_j &\sim \text{Beta}(\alpha_0, \beta_0), \end{align}
 
-where $\alpha_0$ and $\beta_0$ are our prior parameters. We're interested in the posterior for the frequency of tails for each coin, $p(\theta_j \| x_{1j}, \dots, x_{n_j j})$.
+where $\alpha_0$ and $\beta_0$ are our prior parameters. We're interested in the posterior for the frequency of heads for each coin, $p(\theta_j \| x_{1j}, \dots, x_{n_j j})$.
 
-In the standard Bayesian setting, we would choose values for the prior parameters manually, and then form the posterior for each $\theta_j$:
+In the standard Bayesian setting, we would choose values for the prior parameters manually, and then form the posterior for each $\theta_j$. The posterior again has a closed form in this conjugate model:
 
 $$\theta_j | x_{1j}, \dots, x_{n_j j} \sim \text{Beta}\left(\sum_i x_{ij} + \alpha_0, n_j - \sum x_{ij} + \beta_0\right).$$
 
-Alternatively, aking an empirical Bayesian approach, we can estimate $\alpha_0$ and $\beta_0$ from the observed distribution of coin flips. 
+Alternatively, taking an empirical Bayesian approach, we can estimate $\alpha_0$ and $\beta_0$ from the observed distribution of coin flips. 
 
-We generate data with the following code:
+Let's start by generating data with the following code:
 
 ```python
 import numpy as np
@@ -195,7 +195,7 @@ Let $\bar{x}\_j = \frac{1}{n_j} \sum_{i=1}^{n_j} x_{ij}$ be the observed frequen
 </figure>
 </center>
 
-We can see that most of the coins are slightly biased toward $0$ (heads). Also, notice that there are several coins whose observed frequencies of heads is either exactly $0$ or $1$. The maximum likelihood estimate for these coins would thus be $\widehat{\theta}\_j = 0$ or $\widehat{\theta}\_j = 1$, indicating that the coin is entirely biased toward tails or heads. However, these edge cases arise because coins with extreme MLEs tend to have been flipped very few times. For example, if a certain coin was flipped just once, the MLE would necessarily be either $0$ or $1$. Instead, we'd like to regularize these estimates. 
+We can see that most of the coins are slightly biased toward $0$ (tails). Also, notice that there are many coins whose observed frequencies of heads or tails is either exactly $0$ or $1$. The maximum likelihood estimate for these coins would thus be $\widehat{\theta}\_j = 0$ or $\widehat{\theta}\_j = 1$, indicating that the coin is entirely biased toward tails or heads. However, these edge cases arise because coins with extreme MLEs tend to have been flipped very few times. For example, if a certain coin was flipped just once, the MLE would necessarily be either $0$ or $1$. Instead, we'd like to regularize these estimates. 
 
 Instead of the standard Bayesian approach (in which we'd select the priors beforehand), here we'll take an empirical Bayesian approach and share information across coins. This is useful here because we can leverage information from coins that have been flipped many times to better inform our estimates for coins that have only been flipped once or twice.
 
@@ -232,6 +232,10 @@ Below, we can see that neither the standard Bayes nor the empirical Bayes poster
   <figcaption><i></i></figcaption>
 </figure>
 </center>
+
+## Conclusion
+
+Empirical Bayesian analysis can guide the choice of prior distribution when there is little prior knowledge, and it can also enable information sharing across seemingly unrelated samples, making the final posterior more accurate and robust.
 
 ## References
 
