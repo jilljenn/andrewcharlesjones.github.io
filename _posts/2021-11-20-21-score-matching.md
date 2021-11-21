@@ -29,7 +29,7 @@ $$\DeclareMathOperator*{\argmax}{arg\,max}$$
 
 One of the most frequently occurring problems in statistical modeling is dealing with intractable normalizing constants. Outside of relatively simple or conjugate models, it is often impossible to evaluate these constants.
 
-In modern machine learning, this problem often arises when a model's likelihood function is complicated and difficult to normalize. For example, this occurs in energy-based models XXX, GANs XXX, and XXX.
+In modern machine learning, this problem often arises when a model's likelihood function is complicated and difficult to normalize. For example, this occurs in [energy-based models (EBMs)](https://www.cs.toronto.edu/~hinton/absps/tr00-004.pdf), [generative adversarial networks (GANs)](https://arxiv.org/abs/1406.2661), and [variational autoencoders (VAEs)](https://arxiv.org/abs/1312.6114).
 
 Score matching is one approach to fitting these models in the face of intractable partition functions. In this post, we'll explain the details of score matching and provide a simple example.
 
@@ -51,7 +51,7 @@ Here, the integral in $Z_\theta$ is often intractable. Several approaches try to
 
 The basic motivation for score matching is this: Instead of directly maximizing the likelihood function, what if we try to find a $\theta$ such that the *gradient* of the model's log likelihood is approximately the same as the gradient of the data distribution's log likelihood? If we could do this, it may provide a way to only work with the unnormalized density $\widetilde{p}(x; \theta)$, rather than the normalized density $p(x; \theta)$.
 
-Let's make this more precise. To start, let's introduce some terminology. In this post (and in the score matching literature in general), the score function refers to the gradient of the log likelihood function with respect to the data $x$,
+Let's make this more precise. To start, let's introduce some terminology. In this post (and in the score matching literature in general), the score function (sometimes also called the Stein score) refers to the gradient of the log likelihood function with respect to the data $x$,
 
 $$\nabla_x \log p_m(x; \theta).$$
 
