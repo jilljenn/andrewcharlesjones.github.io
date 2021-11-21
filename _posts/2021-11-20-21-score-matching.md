@@ -169,6 +169,7 @@ On the other hand, the "Norm" term is large at the beginning of the animation, w
 ## References
 
 - Hyvärinen, Aapo, and Peter Dayan. "Estimation of non-normalized statistical models by score matching." Journal of Machine Learning Research 6.4 (2005).
+- Song, Yang, and Stefano Ermon. "Generative modeling by estimating gradients of the data distribution." arXiv preprint arXiv:1907.05600 (2019).
 - Song, Yang, et al. "Sliced score matching: A scalable approach to density and score estimation." Uncertainty in Artificial Intelligence. PMLR, 2020.
 
 
