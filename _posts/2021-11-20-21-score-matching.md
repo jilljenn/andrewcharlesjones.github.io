@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Score matching"
-blurb: ""
+blurb: "Complicated likelihoods with intractable normalizing constants are commonplace in many modern machine learning methods. Score matching is an approach to fit these models which circumvents the need to approximate these intractable constants."
 img: ""
 author: "Andy Jones"
 categories: journal
