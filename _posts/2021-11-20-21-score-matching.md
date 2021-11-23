@@ -43,7 +43,7 @@ $$\widehat{\theta}_{MLE} = \argmax_{\theta} \log p_m(x; \theta).$$
 
 However, in many settings this will be impossible due to an intractable normalizing constant. To see this, let's write $p_m(x; \theta)$ in terms of an unnormalized density $\widetilde{p}(x; \theta)$ and the normalizing constant:
 
-$$p_m(x; \theta) = \frac{\widetilde{p}(x; \theta)}{Z_\theta},~~~~Z_\theta = \int \widetilde{p}(x; \theta) dx.$$
+$$p_m(x; \theta) = \frac{\widetilde{p}(x; \theta)}{Z_\theta},~~~~Z_\theta = \int_{\mathcal{X}} \widetilde{p}(x; \theta) dx.$$
 
 Here, the integral in $Z_\theta$ is often intractable. Several approaches try to get around this problem by approximating this integral. Here, we'll explore another approach --- *score matching* --- that doesn't require working with the normalizing constants at all.
 
@@ -63,7 +63,7 @@ $$\nabla_x \log p_m(x; \theta) = \nabla_x \log \widetilde{p}_m(x; \theta) - \und
 
 where the final term drops off because the normalizing constant doesn't depend on $x$.
 
-Note that, even though the score function isn't the distribution in its original form, it still contains information about the distribution. In particular, it tells us the gradient of the distribution for a given distribution, giving us some sense of the linear structure of the distribution.
+Note that, even though the score function isn't the model distribution in its original form, it still contains information about this distribution. In particular, it tells us the gradient of the distribution for a given value of the parameter $\theta$, giving us some sense of the first-order structure of the function.
 
 In score matching, our goal will be to make the score function of the model distribution as "close" as possible to the score function of the data distribution, $\nabla_x p_d(x)$. 
 
