@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nyström approximation"
-blurb: ""
+blurb: "The Nyström approximation is a simple way to approximate covariance matrices and speed up downstream matrix computations."
 img: ""
 author: "Andy Jones"
 categories: journal
