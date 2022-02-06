@@ -106,11 +106,7 @@ Gaussians have tons of nice mathematical properties that make them easy to work 
 
 As the dimension of the Gaussian increases, the average length of a vector drawn from this distribution also increases. Although the mode of a Gaussian is always around its mean (zero in this case), the typical vector drawn from a high-dimensional Gaussian may not be close to the mean. In fact, as we saw above, the sample will most likely reside on a thin shell.
 
-\begin{align}
-\mathbb{E}\_{\mathbf{x} \sim \mathcal{N}\_p(0, I)}[\|\|\mathbf{x}\|\|\_2^2] &= \sum\limits_{j=1}^p \mathbb{E}\_{x_j \sim \mathcal{N}(0, 1)}[x_j^2] \\\
-&= \mathbb{E}\_{x_j \sim \mathcal{N}(0, 1)} \left[\sum\limits_{j=1}^p x_j^2 \right] \\\
-&= p,
-\end{align}
+\begin{align} \mathbb{E}\_{\mathbf{x} \sim \mathcal{N}\_p(0, I)}[\|\|\mathbf{x}\|\|\_2^2] &= \sum\limits_{j=1}^p \mathbb{E}\_{x_j \sim \mathcal{N}(0, 1)}[x_j^2] \\\ &= \mathbb{E}\_{x_j \sim \mathcal{N}(0, 1)} \left[\sum\limits_{j=1}^p x_j^2 \right] \\\ &= p, \end{align}
 
 where we have used the fact that the sum of $p$ squared standard Gaussians is distributed as a $\chi^2$ random variable with $p$ degrees of freedom. In words, this means that the squared norm of a Gaussian random vector will be proportional to the dimension of the Gaussian.
 
