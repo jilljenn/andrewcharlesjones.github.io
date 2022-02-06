@@ -129,7 +129,7 @@ Ferenc Huszár writes that we should think of high-dimensional Gaussians as ["so
 
 ## Conclusion
 
-While it may seem innocent (or maybe even conservative) to make a Gaussian assumption in high-dimensional Euclidean spaces, there can be unexpected practical consequences. 
+While it may seem innocuous (or maybe even conservative) to make a Gaussian assumption in high-dimensional Euclidean spaces, there can be unexpected practical consequences. 
 
 ## References
 
