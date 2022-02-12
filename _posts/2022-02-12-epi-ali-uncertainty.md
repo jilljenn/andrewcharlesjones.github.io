@@ -110,6 +110,7 @@ As we can see, the distinction between these two types of uncertainty isn't rigi
 
 ## References
 
+- David Aldous's [notes on the topic](https://www.stat.berkeley.edu/~aldous/Real_World/ale_epi.html).
 - Kendall, Alex, and Yarin Gal. "What uncertainties do we need in bayesian deep learning for computer vision?." Advances in neural information processing systems 30 (2017).
 
 
