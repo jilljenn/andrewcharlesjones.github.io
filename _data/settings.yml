@@ -7,9 +7,10 @@ disqus:
 google-ID: 'UA-149140730-1'
 
 menu:
-- {name: 'Blog', path: 'menu', url: 'blog.html'}
 - {name: 'Publications', path: 'menu', url: 'publications.html'}
 - {name: 'CV', path: 'menu', url: '../files/Andrew_Jones_CV.pdf'}
+- {name: 'Blog', path: 'menu', url: 'blog.html'}
+# - {name: 'Essays', path: 'menu', url: 'essays.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
