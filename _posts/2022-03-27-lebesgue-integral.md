@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Visualizing Lebesgue integration"
-blurb: ""
+blurb: "Lebesgue integrals can be visualized in a similar way to Riemannian sums."
 img: ""
 author: "Andy Jones"
 categories: journal
