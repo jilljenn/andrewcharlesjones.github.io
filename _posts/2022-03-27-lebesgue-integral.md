@@ -31,7 +31,7 @@ Analogous to approximating Riemannian integrals with "tall and narrow" rectangle
 
 ## Riemannian integration
 
-Recall the definition of a Riemannian integral via infinitesmal sums. Consider the integral of a function $f(x)$ on the interval $[a, b]$:
+Recall the construction of a Riemannian integral via infinitesimal sums. Consider the integral of a function $f(x)$ on the interval $[a, b]$:
 
 \begin{equation}
 \int_a^b f(x) dx. \label{eq:1} \tag{1}
@@ -108,5 +108,7 @@ One of the primary benefits of the Lebesgue integral, of course, is its ability 
 ## References
 
 - Wikipedia page on [Lebesgue integration](https://www.wikiwand.com/en/Lebesgue_integration#/Via_improper_Riemann_integral).
+
+
 
 
