@@ -2,7 +2,6 @@
 layout: page
 title: 
 ---
-These posts are informal notes and may contain errors --- please let me know if you spot any.
 
 <ul class="posts">
   {% for post in site.posts %}
