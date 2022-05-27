@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Regression splines and smoothing splines"
-blurb: ""
+title: "Regression splines"
+blurb: "Splines -- originally a tool for shipbuilding -- are useful in statistics for fitting smooth nonlinear functions to data."
 img: ""
 author: "Andy Jones"
 categories: journal
