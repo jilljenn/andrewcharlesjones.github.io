@@ -18,7 +18,8 @@ tags: []
 
 .post-container {
   margin-bottom: 4rem;
-  width: 450px;
+  /*width: 450px;*/
+  width: 70%;
   /*text-align: justify;*/
   /*text-justify: inter-word;*/
   font-size: 15px;
