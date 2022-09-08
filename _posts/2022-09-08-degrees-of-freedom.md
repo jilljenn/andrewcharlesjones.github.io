@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The ubiquity of degrees of freedom"
-blurb: ""
+blurb: "The concept of degrees of freedom plays an important role in many areas of statistics, engineering, and mathematics."
 img: ""
 author: "Andy Jones"
 categories: journal
