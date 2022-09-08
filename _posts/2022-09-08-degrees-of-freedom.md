@@ -84,7 +84,7 @@ Note that $\mathbf{H}$ is a projection matrix in the sense that it projects the 
 
 When a linear regression model is underconstrained, a common solution is to reduce the model's variance by regulairizing it. Ridge regression is one popular regularized linear model. Recall the ridge regression optimization problem:
 
-$$\min_{\boldsymbol{\beta}} \|\mathbf{y} - \mathbf{X}\boldsymbol{\beta}\|^2 + \lambda \|\boldsymbol{\beta}\|,$$
+$$\min_{\boldsymbol{\beta}} \|\mathbf{y} - \mathbf{X}\boldsymbol{\beta}\|^2 + \lambda \|\boldsymbol{\beta}\|^2,$$
 
 where $\lambda > 0$ controls the strength of the regularization. The ridge estimator is
 
