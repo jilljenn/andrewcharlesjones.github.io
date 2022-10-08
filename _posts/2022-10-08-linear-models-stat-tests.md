@@ -123,7 +123,7 @@ Chi-squared ($\chi^2$) tests are used to test whether two or more proportions ar
 
 $$H_0: \frac{n_1}{n} = \cdots \frac{n_K}{n},$$
 
-and the alternative hypothesis is that at least one of these proportions is unequal to the rest.
+and the alternative hypothesis is that at least one of these proportions is unequal to the rest. Notice that the null hypothesis is equivalent to the hypothesis that the counts are equal, $n_1 = \cdots = n_K.$
 
 We can model the count of each group with a Poisson GLM:
 
