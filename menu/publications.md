@@ -7,7 +7,7 @@ title:
     <li itemscope>
       <div style="margin-top:10%;">
         <a href="https://www.biorxiv.org/content/10.1101/2022.01.10.475692v1" style="text-decoration:none;">Alignment of spatial genomics and histology data using deep Gaussian processes</a>
-        <p style="margin-top:-2px;"><span class="post-date"><i>Andrew Jones</i>, F. William Townes, Didong Li, Barbara E. Engelhardt. <i>Nature Methods (to appear).</i></span></p>
+        <p style="margin-top:-2px;"><span class="post-date"><i>Andrew Jones</i>, F. William Townes, Didong Li, Barbara E. Engelhardt. <i>Nature Methods</i> (to appear).</span></p>
         <p style="margin-top:-16px; margin-left:17px;"><a href="https://www.biorxiv.org/content/10.1101/2022.01.10.475692v1" target="_blank"><img src="https://www.biorxiv.org/sites/default/files/images/favicon.ico" width="18" style="position:relative; top:3px;"></a>
         <a href="/files/gpsa.pdf" target="_blank"><i class="fa fa-file"  style="margin-left: 9px"></i></a>
         <a href="https://github.com/andrewcharlesjones/spatial-alignment" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
@@ -16,7 +16,7 @@ title:
     <li itemscope>
       <div style="margin-top:10%;">
         <a href="https://arxiv.org/abs/2102.06731" style="text-decoration:none;">Contrastive latent variable modeling with application to case-control sequencing experiments</a>
-        <p style="margin-top:-2px;"><span class="post-date"><i>Andrew Jones</i>, F. William Townes, Didong Li, Barbara E. Engelhardt. <i>The Annals of Applied Statistics (2022).</i></span></p>
+        <p style="margin-top:-2px;"><span class="post-date"><i>Andrew Jones</i>, F. William Townes, Didong Li, Barbara E. Engelhardt. <i>The Annals of Applied Statistics</i> (2022).</span></p>
         <p style="margin-top:-16px; margin-left:17px;"><a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-3/Contrastive-latent-variable-modeling-with-application-to-case-control-sequencing/10.1214/21-AOAS1534.short" target="_blank"><img src="https://projecteuclid.org/favicon.png" width="18" style="position:relative; top:3px;"></a>
         <a href="/files/cplvm.pdf" target="_blank"><i class="fa fa-file"  style="margin-left: 9px"></i></a>
         <a href="https://github.com/andrewcharlesjones/cplvm" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
