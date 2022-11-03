@@ -25,7 +25,7 @@ title:
     <li itemscope>
       <div style="margin-top:10%;">
         <a href="https://www.biorxiv.org/content/10.1101/2022.05.31.494236v1" style="text-decoration:none;">A Poisson reduced-rank regression model for association mapping in sequencing data</a>
-        <p style="margin-top:-2px;"><span class="post-date">Tiana Fitzgerald, <i>Andrew Jones</i>, Barbara E. Engelhardt (2022).</span></p>
+        <p style="margin-top:-2px;"><span class="post-date">Tiana Fitzgerald, <i>Andrew Jones</i>, Barbara E. Engelhardt. <i>BMC Bioinformatics</i> (to appear).</span></p>
         <p style="margin-top:-16px; margin-left:17px;"><a href="https://www.biorxiv.org/content/10.1101/2022.05.31.494236v1" target="_blank"><img src="https://www.biorxiv.org/sites/default/files/images/favicon.ico" width="18" style="position:relative; top:3px;"></a>
         <a href="/files/prrr.pdf" target="_blank"><i class="fa fa-file"  style="margin-left: 9px"></i></a>
         <a href="https://github.com/tianafitz/PRRR" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
@@ -40,7 +40,7 @@ title:
         <a href="https://github.com/andrewcharlesjones/multi-group-GP" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
       </div>
     </li>
-    <li itemscope>
+    <!-- <li itemscope>
       <div style="margin-top:10%;">
         <a href="https://arxiv.org/abs/2102.06731" style="text-decoration:none;">Nested policy reinforcement learning</a>
         <p style="margin-top:-2px;"><span class="post-date">Aishwarya Mandyam, <i>Andrew Jones</i>, Krzysztof Laudanski, Barbara E. Engelhardt (2021).</span></p>
@@ -48,7 +48,7 @@ title:
         <a href="/files/nfqi.pdf" target="_blank"><i class="fa fa-file"  style="margin-left: 9px"></i></a>
         <a href="https://github.com/bee-hive/nested-policy-rl" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
       </div>
-    </li>
+    </li> -->
     <li itemscope>
       <div style="margin-top:10%;">
         <a href="https://arxiv.org/abs/2012.07977" style="text-decoration:none;">Probabilistic Contrastive Principal Component Analysis</a>
@@ -58,7 +58,7 @@ title:
         <a href="https://github.com/andrewcharlesjones/pcpca" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
       </div>
     </li>
-    <li itemscope>
+    <!-- <li itemscope>
       <div style="margin-top:10%;">
         <a href="https://www.biorxiv.org/content/10.1101/2020.03.04.976217v1.abstract" style="text-decoration:none;">Post-perturbational transcriptional signatures of cancer cell line vulnerabilities</a>
         <p style="margin-top:-2px;"><span class="post-date"><i>Andrew Jones</i>, Aviad Tsherniak, James M. McFarland (2020).</span></p>
@@ -66,5 +66,5 @@ title:
         <a href="/files/l1000.pdf" target="_blank"><i class="fa fa-file"  style="margin-left: 9px"></i></a>
         <a href="https://github.com/andrewcharlesjones/l1000_analysis" target="_blank"><i class="fa fa-github"  style="margin-left: 4px"></i></a></p>
       </div>
-    </li>
+    </li> -->
 </ul>
