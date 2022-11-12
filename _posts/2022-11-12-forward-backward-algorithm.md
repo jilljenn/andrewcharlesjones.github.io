@@ -61,7 +61,7 @@ Computing $\alpha(z_i)$ and $\beta(z_i)$ correspond to the forward and backward 
 
 To begin to compute $\alpha(z_i),$ let's first show how we can write $\alpha(z_i)$ recursively in terms of $\alpha(z_{i-1}).$ The following sequence of identities uses the principle of $d$ separation as well as the basic laws of probability:
 
-\begin{align} \color{blue}{\alpha(z_i)} &= p(x_1, \dots, x_i, z_i) \\\ &= p(x_1, \dots, x_i | z_i) p(z_i) \\\ &= p(x_i | z_i) p(x_1, \dots, x_{i-1} | z_i) p(z_i) \\\ &= p(x_i | z_i) p(x_1, \dots, x_{i-1}, z_i) \\\ &= p(x_i | z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1}, z_{i-1}, z_i) \\\ &= p(x_i | z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1}, z_i | z_{i-1}) p(z_{i-1}) \\\ &= p(x_i | z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1} | z_{i-1}) p(z_i | z_{i-1}) p(z_{i-1}) \\\ &= p(x_i | z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1}, z_{i-1}) p(z_i | z_{i-1}) \\\ &= \color{blue}{p(x_i | z_i) \sum_{z_{i-1}} \alpha(z_{i-1}) p(z_i | z_{i-1})}. \end{align}
+\begin{align} \color{blue}{\alpha(z_i)} &= p(x_1, \dots, x_i, z_i) \\\ &= p(x_1, \dots, x_i \| z_i) p(z_i) \\\ &= p(x_i \| z_i) p(x_1, \dots, x_{i-1} \| z_i) p(z_i) \\\ &= p(x_i \| z_i) p(x_1, \dots, x_{i-1}, z_i) \\\ &= p(x_i \| z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1}, z_{i-1}, z_i) \\\ &= p(x_i \| z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1}, z_i \| z_{i-1}) p(z_{i-1}) \\\ &= p(x_i \| z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1} \| z_{i-1}) p(z_i \| z_{i-1}) p(z_{i-1}) \\\ &= p(x_i \| z_i) \sum_{z_{i-1}} p(x_1, \dots, x_{i-1}, z_{i-1}) p(z_i \| z_{i-1}) \\\ &= \color{blue}{p(x_i \| z_i) \sum_{z_{i-1}} \alpha(z_{i-1}) p(z_i \| z_{i-1})}. \end{align}
 
 We now have a recursive expression for the $\alpha$ (forward) terms. To complete the computation for $i > 1,$ we need to define a base case for $\alpha(z_1).$ This is given by
 
@@ -71,11 +71,11 @@ $$\alpha(z_1) = p(x_1, z_1) = p(z_1) p(x_1 | z_1) = \prod\limits_{k=1}^K \left[ 
 
 We now compute the $\beta$ terms for the backward pass.
 
-\begin{align} \color{orange}{\beta(z_i)} &= p(x_{i+1}, \dots, x_n | z_i) \\\ &= \sum_{z_{i+1}} p(x_{i+1}, \dots, x_n, z_{i+1} | z_i) \\\ &= \sum_{z_{i+1}} p(x_{i+1}, \dots, x_n | z_i, z_{i+1}) p(z_{i+1} | z_i) \\\ &= \sum_{z_{i+1}} p(x_{i+2}, \dots, x_n | z_{i+1}) p(x_{i+1} | z_{i+1}) p(z_{i+1} | z_i) \\\ &= \color{orange}{\sum_{z_{i+1}} \beta(z_{i+1}) p(x_{i+1} | z_{i+1}) p(z_{i+1} | z_i)}. \end{align}
+\begin{align} \color{orange}{\beta(z_i)} &= p(x_{i+1}, \dots, x_n \| z_i) \\\ &= \sum_{z_{i+1}} p(x_{i+1}, \dots, x_n, z_{i+1} \| z_i) \\\ &= \sum_{z_{i+1}} p(x_{i+1}, \dots, x_n \| z_i, z_{i+1}) p(z_{i+1} \| z_i) \\\ &= \sum_{z_{i+1}} p(x_{i+2}, \dots, x_n \| z_{i+1}) p(x_{i+1} \| z_{i+1}) p(z_{i+1} \| z_i) \\\ &= \color{orange}{\sum_{z_{i+1}} \beta(z_{i+1}) p(x_{i+1} \| z_{i+1}) p(z_{i+1} \| z_i)}. \end{align}
 
 This gives us a recursive expression for the $\beta$ (backward) terms. To get a base case for $\beta(z_n)$, we have
 
-\begin{align} p(z_n | X) &= \frac{\alpha(z_n) \beta(z_n)}{p(X)} \\\ &= \frac{p(x_1, \dots, x_n, z_n) \beta(z_n)}{p(X)} \\\ &= \frac{p(X, z_n) \beta(z_n)}{p(X)}, \end{align}
+\begin{align} p(z_n \| X) &= \frac{\alpha(z_n) \beta(z_n)}{p(X)} \\\ &= \frac{p(x_1, \dots, x_n, z_n) \beta(z_n)}{p(X)} \\\ &= \frac{p(X, z_n) \beta(z_n)}{p(X)}, \end{align}
 
 which implies that $\beta(z_n) = 1.$
 
