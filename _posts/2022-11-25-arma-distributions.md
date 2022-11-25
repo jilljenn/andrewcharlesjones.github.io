@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ARMA distributions"
-blurb: ""
+blurb: "Deriving the distributional assumptions behind the AR, MA, and ARMA models."
 img: ""
 author: "Andy Jones"
 categories: journal
