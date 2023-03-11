@@ -2,7 +2,7 @@
 layout: page
 title: 
 ---
-<p style="font-size:15px;">A full list of publications can be found on <a href="https://scholar.google.com/citations?user=cdPiMskAAAAJ&hl=en">Google Scholar</a>.</p>
+<p style="font-size:15px;">A full list of publications can be found on <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6ardClNeVznBH90alLFyb9W49tnlQGI6dMfq16eHYjbJrtXWRy8KMPt1X6xCSvGK-vILRJrvUmyJMi1VjdXajAfqC05XANUyyW38447hn-ynrQIec&user=Wr_6CE8AAAAJ">Google Scholar</a>.</p>
 <ul class="posts">
     <li itemscope>
       <div style="margin-top:10%;">
